@@ -140,7 +140,7 @@ emp_ven_slot_2 = {
 		required_missions = { emp_ven_patronize_the_scuole_grandi }
 		
 		trigger = {
-			treasury = 3000
+			treasury = 500
 			legitimacy_equivalent = 90
 		}
 		effect = {
