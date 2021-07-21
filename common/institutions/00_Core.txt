@@ -637,12 +637,12 @@ new_world_i = {
 			is_capital = yes
 		}
 		is_in_capital_area = yes
-		owner = { 
-			has_idea = quest_for_the_new_world 
+		owner = {  
 			#at least one province colonised or colonising, or have a subject colony
 			OR = {
 				any_owned_province = {
 					OR = {
+						has_idea = quest_for_the_new_world
 						continent = north_america
 						continent = south_america
 						continent = new_world
