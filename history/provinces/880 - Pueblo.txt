@@ -1,8 +1,6 @@
 #880 - Pueblo
 
-add_core = OHK
-owner = OHK
-controller = OHK
+
 culture = pueblo 
 religion = totemism
 capital = "Ohkay Owingeh" 

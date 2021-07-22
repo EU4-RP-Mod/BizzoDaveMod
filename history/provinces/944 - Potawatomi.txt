@@ -1,9 +1,7 @@
 #944 - Potawatomi
 
 
-add_core = FOX
-owner = FOX
-controller = FOX
+
 culture = mesquakie
 religion = totemism
 capital = "Potawatomi"

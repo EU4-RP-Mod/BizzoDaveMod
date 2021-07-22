@@ -1,8 +1,6 @@
 #915 - Illinois
 
-add_core = PEO
-owner = PEO
-controller = PEO
+
 culture = illini
 religion = totemism
 capital = "Illinois"

@@ -1,7 +1,6 @@
 # - Uyapari
 
-owner = CAB
-controller = CAB
+
 culture = carib
 discovered_by = south_american
 religion = animism
@@ -12,7 +11,7 @@ hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
-add_core = CAB
+
 native_size = 15
 native_ferocity = 2
 native_hostileness = 6
