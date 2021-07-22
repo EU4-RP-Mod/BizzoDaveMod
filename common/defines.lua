@@ -31,11 +31,11 @@ NDiplomacy = {
 	ESTATE_DISLIKE_ALLIANCE_ON_VC = -0.2,
 	HEGEMONY_LOST_DAYS = 7300,
 	HEGEMONY_MONTHLY_PROGRESS = 0.5,
-	CHANGE_RIVAL_YEARS = 25,
+	CHANGE_RIVAL_YEARS = 15,
 	CONDOTTIERI_MIN_DURATION = 18,					-- Minimum duration for Condottieri agreements that must be paid for in advance and that cannot be cancelled.
 	UNCONDITIONAL_SURRENDER_MONTHS = 2,				-- Months before unconditional surrender starts having an effect on Call for Peace. Set to negative values to disable feature.
-	SHAREMAP_PRESTIGE_TRANSFER_LOSE = -15,				-- Prestige transferred for the Request to Share Maps diplomatic action.
-	SHAREMAP_PRESTIGE_TRANSFER_GAIN = 10,				-- Prestige transferred for the Request to Share Maps diplomatic action.
+	SHAREMAP_PRESTIGE_TRANSFER_LOSE = 0,				-- Prestige transferred for the Request to Share Maps diplomatic action.
+	SHAREMAP_PRESTIGE_TRANSFER_GAIN = 0,				-- Prestige transferred for the Request to Share Maps diplomatic action.
 	TRADE_LEAGUE_MIN_PRESTIGE_OLD_LEADER = -50,		-- Minimum required prestige to stay leader of a Trade League.
 	TRADE_LEAGUE_MIN_PRESTIGE_NEW_LEADER = 20,		-- Minimum required prestige to become the new leader of a Trade League when the old one is resigned.
 	TRADE_LEAGUE_BREAK_OPINION = -50,				-- AI will leave a Trade League if their opinion of you falls below this value.
@@ -44,7 +44,7 @@ NDiplomacy = {
 
 
 	TREASURE_FLEET_OPINION_HIT = -25,				-- Opinion hit from pirating trasure flet max (scaled by gold pirated / 50).
-	DISHONORABLE_PEACE_MONTHS = 12,					-- See DISHONORABLE_PEACE_WARSCORE. Set to 0 to entirely disable the feature.
+	DISHONORABLE_PEACE_MONTHS = 0,					-- See DISHONORABLE_PEACE_WARSCORE. Set to 0 to entirely disable the feature.
 	DISHONORABLE_PEACE_WARSCORE = -10,				-- If you have more than this amount of individual warscore, peacing out within DISHONORABLE_PEACE_MONTHS of war start counts as a dishonorable act and incurs a CALL_ALLY_DECLINE_PRESTIGE_PENALTY hit.
 
 	DAYS_TO_DECLARE_WAR = 30,						-- Days from start of game before you can DOW anyone
@@ -102,7 +102,7 @@ NDiplomacy = {
 	MAX_NUM_OF_ELECTORS = 8,						-- Maximum number of electors in the interface
 	MAX_FREE_CITIES = 12,
 	MIN_NUM_ELECTORS_FOR_REMOVE_ELECTORATE = 2,		-- Limit is inclusive.
-	HRE_PRINCE_AUTHORITY_THRESHOLD = 25,			-- Threshold below which you lose IA, and above which you gain it
+	HRE_PRINCE_AUTHORITY_THRESHOLD = 20,			-- Threshold below which you lose IA, and above which you gain it
 	IMPERIAL_AUTHORITY_FROM_PRINCES = 0.075,			-- Scales to threshold
 	HRE_FOREIGN_CONTROL_PENALTY = -0.005,			-- Each foreign-controlled province in the empire (owned or vassalised) lowers IA by this amount
 	HRE_HERETIC_PENALTY = -0.01,					-- Per heretic prince (halved by Peace of Westphalia)
@@ -117,7 +117,7 @@ NDiplomacy = {
 	AMOUNT_OF_ACTIVE_CARDINALS = 7, 				-- Number of active Cardinals
 	AMOUNT_OF_FUTURE_CARDINALS = 5, 				-- Number of future Cardinals
 	EXCOMMUNICATE_ACTION_MONTHS = 36, 				-- Excommunication "cooldown" (months)
-	CRUSADE_TIMEOUT_YEARS = 30, 					-- Crusade timeout (years)
+	CRUSADE_TIMEOUT_YEARS = 15, 					-- Crusade timeout (years)
 	WE_IMPACT_ON_ANNEX_INTEGRATE = -0.05,			-- multiplied with current WE
 	EMPEROR_VOTE_DAYS = 60,	 						-- _DDEF_EMPEROR_VOTE_DAYS_; "Cooldown" until Electors can change their vote again.
 	EMPEROR_REVOKE_AUTHORITY_COST = 50.0,			-- Cost for the emperor to revoke a reform
@@ -327,7 +327,7 @@ NDiplomacy = {
 
 	DIPLOMAT_SPEED = 20.0,							-- DIPLOMAT_SPEED
 	DIPLOMAT_COOLDOWN_TIME = 1,						-- DIPLOMATIC ACTION COOLDOWN IN MONTHS
-	MIN_RELATIONS_TO_ALLY = -25,						-- Alliances not possible if either country has an opinion of the other lower than this
+	MIN_RELATIONS_TO_ALLY = -200,						-- Alliances not possible if either country has an opinion of the other lower than this
 	MIN_RELATIONS_TO_SUPPORT_INDEPENDENCE = -25,	-- Support Independence not possible if either country has an opinion of the other lower than this
 
 	ELECTIVE_VICTORY_PRESTIGE = 25,				-- Prestige for getting a heir from your country onto the throne of an elective nation
@@ -386,7 +386,7 @@ NDiplomacy = {
 	BREAK_ALLIANCE_DIPLOREP_FACTOR = 3,				-- AI acceptance factor per diplomatic reputation
 	AE_COALITION_THRESHOLD = -50,					-- Coalitions can form below this amount of AE opinion
 	
-	ABANDON_UNION_PRESTIGE = -25,					-- The change in prestige for the overlord when abandoning a personal union.
+	ABANDON_UNION_PRESTIGE = 0,					-- The change in prestige for the overlord when abandoning a personal union.
 
 	PAY_SUBJECT_DEBT_LIBERTY_DESIRE_REDUCTION = 5,	-- Amount of liberty desire the subject loses per paid loan
 
@@ -485,12 +485,12 @@ NCountry = {
 	ELECTIVE_FOREIGN_MONARCH_MAX_BONUS = 0,		-- The maximum change that is applied to foreigns heirs in elective monarchy
 	ABDICATE_LEGITIMACY_THRESHOLD = 50,
 	ABDICATE_AGE_THRESHOLD = 60,
-	ABDICATE_RULING_LENGTH_THRESHOLD = 20,
-	ABDICATE_LEGITIMACY_HIT = -20,
-	ABDICATE_PRESTIGE_HIT = -50,
+	ABDICATE_RULING_LENGTH_THRESHOLD = 15,
+	ABDICATE_LEGITIMACY_HIT = 0,
+	ABDICATE_PRESTIGE_HIT = -25,
 
 
-	DISINHERIT_PRESTIGE_HIT = -50,
+	DISINHERIT_PRESTIGE_HIT = -25,
 	DISINHERIT_PRESTIGE_THRESHOLD = 0,
 	
 	NEW_HEIR_PRESTIGE_HIT = -20,
@@ -549,7 +549,7 @@ NCountry = {
 	ESTATE_DEFAULT_LOYALTY = 30,
 	ESTATE_INFLUENCE_PER_DEV = 0.5,
 	ESTATE_MAX_INFLUENCE_FROM_DEV = 100.0,
-	ESTATE_MIN_DISTRIBUTED_CROWNLAND = 30.0, 	-- Minimum of crownland when distributing land at start
+	ESTATE_MIN_DISTRIBUTED_CROWNLAND = 30.1, 	-- Minimum of crownland when distributing land at start
 	ESTATE_CROWNLAND_INFLUENCE = 60.0,			-- Crownland has n% influence, this is modified by absolutism.
 	ESTATE_START_CROWNLAND_INFLUENCE = 10.0,	-- Crownland has n% influence at start of a new game.
 	ESTATE_CROWNLAND_FROM_DEV = 0.2,			-- How much crownland you gain from developing a province.
@@ -596,7 +596,7 @@ NCountry = {
 	PARLIAMENT_ISSUE_DURATION = 10,				-- in years
 	PARLIAMENT_DEBATE_DURATION = 5,				-- in years
 	NUM_PARLIAMENT_ISSUES = 5,
-	PARLIAMENT_PRESTIGE_HIT = -20,				-- penalty if failed debate.
+	PARLIAMENT_PRESTIGE_HIT = 0,				-- penalty if failed debate.
 	PARLIAMENT_CHANCE_OF_DECISION = 10,			-- % Chance debate is ended after PARLIAMENT_DEBATE_DURATION
 
 	ALLOW_FEMALE_GENERALS = 0,
@@ -718,12 +718,12 @@ NCountry = {
 	PS_MAKE_PROVINCE_CORE = 10,
 	PS_REDUCE_INFLATION = 75,
 	PS_PROMOTE_MERCANTILISM = 100,
-	PS_MOVE_CAPITAL = 200,
+	PS_MOVE_CAPITAL = 100,
 	PS_MOVE_CAPITAL_EXTRA = 20,						-- Per 100 country development.
 	PS_MOVE_CAPITAL_DISTANCE = 10,					-- How many pixels distance per 1 Adm.
 	PS_MOVE_CAPITAL_DISTANCE_CAP = 300,				-- How much this penalty is allowed to cost in Adm.
-	PS_MOVE_TRADE_PORT = 200,
-	PS_REPLACE_RIVAL = 100,
+	PS_MOVE_TRADE_PORT = 0,
+	PS_REPLACE_RIVAL = 0,
 	PS_SEIZE_COLONY = 25,
 	PS_BURN_COLONY = 5,
 	PS_ATTACK_NATIVES = 5,
@@ -783,10 +783,10 @@ NCountry = {
 	DISHONOURED_ALLIANCE_DURATION = 1800,
 
 	CALL_ALLY_DECLINE_PRESTIGE_PENALTY = -25.0,		-- Prestige penalty for declining call for arms
-	CLAIM_THRONE_PRESTIGE_PENALTY = -20.0,			-- Prestige penalty when claiming throne
-	BREAK_VASSAL_PRESTIGE_PENALTY = -25.0,			-- Prestige penalty when break vassalisation
-	BREAK_MARRIAGE_PRESTIGE_PENALTY = -1,			-- Prestige penalty when break royal marriage
-	BREAK_MARRIAGE_STABILITY_PENALTY = -1,			-- Stability penalty when break royal marriage
+	CLAIM_THRONE_PRESTIGE_PENALTY = 0,			-- Prestige penalty when claiming throne
+	BREAK_VASSAL_PRESTIGE_PENALTY = 0,			-- Prestige penalty when break vassalisation
+	BREAK_MARRIAGE_PRESTIGE_PENALTY = 0,			-- Prestige penalty when break royal marriage
+	BREAK_MARRIAGE_STABILITY_PENALTY = 0,			-- Stability penalty when break royal marriage
 	FORM_MARRIAGE_HIGHER_PRESTIGE = -2,				-- Legitimacy Change when forming a royal marriage while having more Prestige than the other country.
 	FORM_MARRIAGE_HIGHER_LEGITIMACY = -3,			-- Legitimacy Change when forming a royal marriage while having more legitimacy than the other country.
 	ANNEX_OR_INTEGRATE_PRESTIGE = 5.0,				-- Prestige gain on diplomatic annex or integrate
@@ -802,8 +802,8 @@ NCountry = {
 	CORE_LOSE = 50, 								-- how many years until a core is lost.
 	CORE_LOSE_CULTURE_GROUP =150,					-- how many years until a core in a country's culture group is lost.
 	CORE_LOSE_PRIMARY_CULTURE_TAG = -1,				-- how many years until a core is lost for the primary tag of a country (-1 = never lost)
-	CORE_LOSE_PRESTIGE = -10.0,						-- Prestige change when lost core
-	ABANDON_CORE_PRESTIGE = -10.0,					-- The cost of abandoning a core that some other country owns.
+	CORE_LOSE_PRESTIGE = 0,						-- Prestige change when lost core
+	ABANDON_CORE_PRESTIGE = 0,					-- The cost of abandoning a core that some other country owns.
 	ABANDON_IDEAGROUP_REFUND = 0.10,				-- The part of the idea group spent that will be refunded upon abandonment.
 	NEIGHBOURBONUS = -0.05, 						-- _CDEF_NEIGHBOURBONUS_
 	NEIGHBOURBONUS_CAP = -0.75, 					-- _CDEF_NEIGHBOURBONUS_CAP_
@@ -818,9 +818,9 @@ NCountry = {
 	BASE_HEIR_BIRTH = 120, 							-- _CDEF_BASE_HEIR_BIRTH_
 	AGE_OF_ADULTHOOD = 15, 							-- _CDEF_AGE_OF_ADULTHOOD_
 	MAX_QUEEN_AGE = 35,								-- You can't get a queen/prince older than this
-	MAX_EXTRA_PERSONALITIES = 2,					-- Number of personalities that can be gained except the one you get when turning 15.
+	MAX_EXTRA_PERSONALITIES = 3,					-- Number of personalities that can be gained except the one you get when turning 15.
 	FIRST_EXTRA_PERSONALITY = 10,					-- Number of years after inauguration that first extra personality is gained.
-	YEARS_PER_EXTRA_PERSONALITY = 15,				-- Number of years between new personalities after first one.
+	YEARS_PER_EXTRA_PERSONALITY = 10,				-- Number of years between new personalities after first one.
 	ANCESTOR_PERSONALITY_LEVEL_1 = 6,				-- Roof of first level of ancestor personality
 	ANCESTOR_PERSONALITY_LEVEL_2 = 12,				-- Roof of second level of ancestor personality
 	ANCESTOR_COST = 400,							-- Cost to integrate an ancestor into the faith.
@@ -1026,10 +1026,10 @@ NCountry = {
 	REVOLUTION_CLAIM_MIN_ZEAL = 20.0,		-- Minimum Revolutionary Zeal required for contestant to claim the revolution target
 	REVOLUTION_CLAIM_COOLDOWN = 12,			-- How many months until it can be stolen again
 	TRIBE_STARTING_DEV = 3,							-- Starting dev of a tribe
-	MIGRATORY_TRIBE_DEVASTATION_BURN = 0.8,			-- How much devastation is burnt per year, multiplied with development. 
+	MIGRATORY_TRIBE_DEVASTATION_BURN = 0.0,			-- How much devastation is burnt per year, multiplied with development. 
 	MIGRATORY_TRIBE_DEVASTATION_ALERT_THRESHOLD = 80,
-	MIGRATORY_TRIBE_DEVELOPMENT_PROGRESS = 0.02, 	-- How much progress on development for each monthly tick
-	MIGRATORY_TRIBE_DEVELOPMENT_OTHER_BONUS = 0.08,	-- Bonus progress gained on development from burning someone else province.
+	MIGRATORY_TRIBE_DEVELOPMENT_PROGRESS = 0.00, 	-- How much progress on development for each monthly tick
+	MIGRATORY_TRIBE_DEVELOPMENT_OTHER_BONUS = 0.00,	-- Bonus progress gained on development from burning someone else province.
 	TRIBE_MIGRATION_ADM_COST = 0,
 	TRIBE_MIGRATION_DIP_COST = 0,
 	TRIBE_MIGRATION_MIL_COST = 50,
@@ -1066,7 +1066,7 @@ NCountry = {
 	FEDERATION_ADVANCEMENT_COHESION_REQUIREMENT = 100.0,
 	FEDERATION_ADVANCEMENT_COHESION_COST = 80.0,
 
-	EXPAND_INFRASTRUCTURE_DEV_LIMIT = 15, 			-- How much dev you need for each improvement.
+	EXPAND_INFRASTRUCTURE_DEV_LIMIT = 10, 			-- How much dev you need for each improvement.
 },
 
 NEconomy = {
@@ -1198,12 +1198,12 @@ NMilitary = {
 
 	COSSACKS_SHOCK_DAMAGE_BONUS = 0.1,
 	STRELTSY_FIRE_DAMAGE_BONUS = 0.1,
-	MARINE_SHOCK_DAMAGE_TAKEN = 0.10,
+	MARINE_SHOCK_DAMAGE_TAKEN = 0.05,
 	MAX_SAILOR_LACK_ATTRITION = 1,
 	SAILOR_MAINTAINANCE = 0.02,		-- of build cost.
 	BANNER_DISCIPLINE_BONUS = 0.05,
 	BANNER_MANPOWER_USAGE = 0.25,
-	BANNER_REINFORCE_SPEED = -0.5,
+	BANNER_REINFORCE_SPEED = -0.3,
 	BANNER_MAINTENANCE_COST = 0.5,
 	BANNER_AGE_MULTIPLIER = 0.50,
 	BANNER_STARTING_STRENGTH = 1.0,					-- Starting strength of a banner regiment, 1.0 being full strength
@@ -2276,7 +2276,7 @@ NReligion = {
 	MAX_CARDINALS = 49,											-- Max amount of cardinals
 	MAX_CARDINALS_PER_COUNTRY = 7,								-- Max cardinals in a single country
 
-	YEARLY_PAPAL_INFLUENCE_CATHOLIC = 0.5,						-- The amount of yearly papal influence you receive each year for being catholic
+	YEARLY_PAPAL_INFLUENCE_CATHOLIC = 1.5,						-- The amount of yearly papal influence you receive each year for being catholic
 	YEARLY_PAPAL_INFLUENCE_PER_CARDINAL = 0.5,					-- The amount of yearly papal influence you receive each year for each cardinal you have active
 	YEARLY_POPE_INVESTED_INFLUENCE_PER_CARDINAL = 0.1,			-- The amount of investment Papal state gets towards becoming Papal controller for each cardinal that exists
 	MAX_PAPAL_INFLUENCE = 200.0,								-- The maximum stored amount of papal influence for each country.
@@ -2303,11 +2303,11 @@ NReligion = {
 
 	CHANGE_SECONDARY_PRESTIGE_HIT = -50,
 	MIN_HARMONIZE_DEVELOPMENT = 20,
-	STARTING_HARMONY = 50.0,							-- Confucian countries start with this.
-	YEARLY_HARMONY_INCREASE = 1.0,
-	HARMONY_LOSS_PER_DEV_CONVERTED = 1.0,
+	STARTING_HARMONY = 70.0,							-- Confucian countries start with this.
+	YEARLY_HARMONY_INCREASE = 1.5,
+	HARMONY_LOSS_PER_DEV_CONVERTED = 0,
 	YEARLY_HARMONY_INCREASE_WHEN_HARMONIZING = -3.0,
-	YEARLY_HARMONIZATION_PROGRESS = 0.03, 			-- 3%
+	YEARLY_HARMONIZATION_PROGRESS = 0.05, 			-- 3%
 
 	INITIAL_ISOLATIONISM = 1,						-- Level of isolationism for a newly shintoed country.
 
@@ -2437,7 +2437,7 @@ NGovernment = {
 	INVITE_MINORITIES_GAIN = 1,
 	GOVERNMENT_REFORM_BASE_COST = 100.0,
 	GOVERNMENT_REFORM_COST_INCREASE = 50.0,
-	GOVERNMENT_REFORM_YEARLY_BASE_PROGRESS = 10.0,
+	GOVERNMENT_REFORM_YEARLY_BASE_PROGRESS = 12.5,
 	GOVERNMENT_REFORM_HISTORIC_AUTONOMY = 0.25,
 	GOVERNMENT_REFORM_CHANGE_PROGRESS_COST = 50.0,
 	GOVERNMENT_REFORM_COST_CENTRALIZE_STATE = 100.0,
@@ -2457,10 +2457,10 @@ NGovernment = {
 	LEGACY_NATIVES_REFORM_THEOCRACY_SPONSOR = "theocratic_government",
 	LEADER_AS_MONARCH_TRADITION = 30, -- How much tradition leaders will get when generated for
 	
-	CONCENTRATE_DEVELOPMENT_CAPITAL_PROPORTION = 0.5,
-	CONCENTRATE_DEVELOPMENT_OTHER_STATE_PROVINCES_PROPORTION = 0.3,
-	FREE_CONCENTRATE_DEVELOPMENT_CAPITAL_PROPORTION = 0.7,
-	FREE_CONCENTRATE_DEVELOPMENT_OTHER_STATE_PROVINCES_PROPORTION = 0.3,
+	CONCENTRATE_DEVELOPMENT_CAPITAL_PROPORTION = 0.3,
+	CONCENTRATE_DEVELOPMENT_OTHER_STATE_PROVINCES_PROPORTION = 0.2,
+	FREE_CONCENTRATE_DEVELOPMENT_CAPITAL_PROPORTION = 0.5,
+	FREE_CONCENTRATE_DEVELOPMENT_OTHER_STATE_PROVINCES_PROPORTION = 0.2,
 },
 
 }
