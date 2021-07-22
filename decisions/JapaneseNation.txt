@@ -30,8 +30,9 @@ country_decisions = {
 			owns = 1028
 		}
 		effect = {
+		
 			remove_government_reform = shogunate
-			#set_legacy_government = despotic_monarchy
+			add_government_reform = japanese_emperor
 			set_government_rank = 3
 			custom_tooltip = unite_japan_subject_tooltip
 			hidden_effect = {
@@ -91,9 +92,9 @@ country_decisions = {
 			is_at_war = no
 		}
 		effect = {
+			add_government_reform = japanese_emperor
 			change_tag = JAP
 			remove_government_reform = shogunate
-			#set_legacy_government = despotic_monarchy
 			set_country_flag = formed_japan_flag
 			set_government_rank = 3
 			add_legitimacy = 100
@@ -147,12 +148,12 @@ country_decisions = {
 			is_at_war = no
 		}
 		effect = {
+			add_government_reform = japanese_emperor
 			change_tag = JAP
 			set_country_flag = formed_japan_flag
 			remove_non_electors_emperors_from_empire_effect = yes
 			remove_government_reform = daimyo
 			remove_government_reform = indep_daimyo
-			#set_legacy_government = despotic_monarchy
 			set_government_rank = 3
 			add_legitimacy = 100
 			add_adm_power = 100
