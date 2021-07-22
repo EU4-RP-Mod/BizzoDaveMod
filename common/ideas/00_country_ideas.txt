@@ -98,7 +98,7 @@ ENG_ideas = {
 	free = yes		#will be added at load.
 	
 	royal_navy = {
-			navy_tradition = 0.25
+			range = 0.5
 			heavy_ship_power = 0.10
 	}
 	eltham_ordinance = {
@@ -144,6 +144,7 @@ GBR_ideas = {
 	}
 	city_upon_a_hill = {
 		global_colonial_growth = 20
+		range = 0.5
 	}
 	british_merchant_navy = {
 		global_tariffs = 0.15
@@ -306,6 +307,7 @@ SPA_ideas = {
 
 	devout_catholisism = {
 		papal_influence = 2
+		range = 0.5
 	}
 	inter_caetera = {
 		idea_claim_colonies = yes
@@ -344,6 +346,7 @@ CAS_ideas = {
 	free = yes		#will be added at load.
 	the_reconquista = {
 		army_tradition_decay = -0.01
+		range = 0.5
 	}
 	spanish_inquisition = {
 		global_missionary_strength = 0.02
@@ -470,6 +473,7 @@ FRA_ideas = {
 	
 	french_language_in_all_courts = {
 		diplomatic_upkeep = 1
+		range = 0.5
 	}
 	elan = {
 		land_morale = 0.20
@@ -1056,7 +1060,7 @@ BRA_ideas = {
 
 POR_ideas = {
 	start = {
-		range = 0.25
+		range = 0.50
 		trade_efficiency = 0.15
 	}
 	
@@ -1075,19 +1079,22 @@ POR_ideas = {
 	}
 	afonsine_ordinances = {
 		global_trade_goods_size_modifier = 0.1
+		land_morale = 0.10
 	}
 	case_de_india = {
 		global_trade_power = 0.1
 	}
 	land_before_faith = {
 		global_colonial_growth = 15
+		colonists = 1
 	}
 	the_bandeirantes = {
 		merchants = 1
+		infantry_power = 0.05
 	}
 	royal_absolutism = {
-		build_cost = -0.15
-		yearly_absolutism = 0.5
+		build_cost = -0.05
+		development_cost = -0.05
 	}
 	por_royal_military_academy = {
 		defensiveness = 0.1
@@ -1287,6 +1294,7 @@ BUR_Ideas = {
 	
 	golden_fleece = {
 		prestige = 1
+		range = 0.5
 	}
 	compagnies_ordonnance = {
 		merc_maintenance_modifier = -0.15
@@ -1302,6 +1310,7 @@ BUR_Ideas = {
 	}
 	freedom_of_worship = {
 		tolerance_heretic = 2
+		global_colonial_growth = 25
 	}
 	bur_regimental_system = {
 		global_manpower_modifier = 0.25
