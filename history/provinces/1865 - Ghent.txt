@@ -1,8 +1,9 @@
 # 1865 - Ghent
 
-owner = FLA
-controller = FLA
+owner = BUR
+controller = BUR
 add_core = FLA
+add_core = BUR
 is_city = yes
 capital = "Ghent"
 culture = flemish
@@ -11,6 +12,7 @@ hre = no
 base_tax = 5
 base_production = 5
 trade_goods = cloth
+shipyard = yes
 base_manpower = 3
 discovered_by = eastern
 discovered_by = western

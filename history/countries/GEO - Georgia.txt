@@ -89,9 +89,9 @@ capital = 423 # T'bilisi
 	monarch = {
 		name = "Vakhtang IV"
 		dynasty = "Bagrationi"
-		adm = 2
-		dip = 2
-		mil = 1
+		adm = 3
+		dip = 3
+		mil = 3
 	}
 }
 
@@ -100,11 +100,11 @@ capital = 423 # T'bilisi
 		name = "Giorgi"
 		monarch_name = "Giorgi VII"
 		dynasty = "Bagrationi"
-		birth_date = 1417.1.1
+		birth_date = 1437.1.1
 		death_date = 1476.1.1
 		claim = 95
-		adm = 0
-		dip = 0
+		adm = 4
+		dip = 3
 		mil = 3
 	}
 }

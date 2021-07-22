@@ -1,17 +1,19 @@
 #4141 - Ditmarschen
 
-owner = DTT
-controller = DTT
+owner = SHL
+controller = SHL
 add_core = DTT
+add_core = SHL
 culture = lower_saxon
 religion = catholic
 hre = yes
 base_tax = 2
 base_production = 3
-trade_goods = grain
+trade_goods = salt
 base_manpower = 3
 capital = "Meldorf"
 is_city = yes
+fort_15th = yes
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

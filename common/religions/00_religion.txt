@@ -325,7 +325,7 @@ christian = {
 			catholic
 		}
 		country = {
-			development_cost = -0.1
+			fire_damage = 0.1
 			innovativeness_gain = 0.5
 		}
 		
@@ -783,7 +783,7 @@ christian = {
 		color = { 178 38 76 }
 		icon = 14
 		country = {
-			defensiveness = 0.1
+			infantry_power = 0.10
 			tolerance_own = 1
 		}
 		country_as_secondary = {

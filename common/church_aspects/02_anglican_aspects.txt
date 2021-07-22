@@ -11,14 +11,14 @@ divorce_consort_aspect = {
 	trigger = {
 		has_consort = yes
 		is_female = no
-		has_heir = no
 		is_lesser_in_union = no
 		has_regency = no
 	}
 	effect = {
 		custom_tooltip = divorce_consort_tooltip
-		hidden_effect = {
-			remove_consort = yes
+		    define_consort = {
+			country_of_origin = ROOT
+			hide_skills = yes
 		}		
 	}
 	ai_will_do = {
@@ -51,16 +51,14 @@ gain_consort_aspect = {
 		NOT = { has_reform = ottoman_government }
 	}
 	trigger = {
-		has_consort = no
-		is_female = no
+		has_heir = no
 		is_lesser_in_union = no
 		has_regency = no
 	}
 	effect = {
-		define_consort = {
+		define_heir = {
 			country_of_origin = ROOT
 			hide_skills = yes
-			female = yes
 		}
 	}
 	ai_will_do = {

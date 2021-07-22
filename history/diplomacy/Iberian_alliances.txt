@@ -1,8 +1,8 @@
 # Navarra under John II of Aragon
 union =  {
-	first = ARA
+	first = CAS
 	second = NAV
-	start_date = 1458.6.29
+	start_date = 1404.1.1
 	end_date = 1479.1.20
 }
 
@@ -31,7 +31,7 @@ union = {
 }
 
 # Aragon and Sicily, Alfons V/Alfonso I
-union = {
+vassal = {
 	first = ARA
 	second = NAP
 	start_date = 1442.3.3
