@@ -98,7 +98,7 @@ ENG_ideas = {
 	free = yes		#will be added at load.
 	
 	royal_navy = {
-			navy_tradition = 0.25
+			range = 0.5
 			heavy_ship_power = 0.10
 	}
 	eltham_ordinance = {
@@ -144,6 +144,7 @@ GBR_ideas = {
 	}
 	city_upon_a_hill = {
 		global_colonial_growth = 20
+		range = 0.5
 	}
 	british_merchant_navy = {
 		global_tariffs = 0.15
@@ -306,6 +307,7 @@ SPA_ideas = {
 
 	devout_catholisism = {
 		papal_influence = 2
+		range = 0.5
 	}
 	inter_caetera = {
 		idea_claim_colonies = yes
@@ -344,6 +346,7 @@ CAS_ideas = {
 	free = yes		#will be added at load.
 	the_reconquista = {
 		army_tradition_decay = -0.01
+		range = 0.5
 	}
 	spanish_inquisition = {
 		global_missionary_strength = 0.02
@@ -470,6 +473,7 @@ FRA_ideas = {
 	
 	french_language_in_all_courts = {
 		diplomatic_upkeep = 1
+		range = 0.5
 	}
 	elan = {
 		land_morale = 0.20
@@ -1056,7 +1060,7 @@ BRA_ideas = {
 
 POR_ideas = {
 	start = {
-		range = 0.25
+		range = 0.50
 		trade_efficiency = 0.15
 	}
 	
@@ -1075,19 +1079,22 @@ POR_ideas = {
 	}
 	afonsine_ordinances = {
 		global_trade_goods_size_modifier = 0.1
+		land_morale = 0.10
 	}
 	case_de_india = {
 		global_trade_power = 0.1
 	}
 	land_before_faith = {
 		global_colonial_growth = 15
+		colonists = 1
 	}
 	the_bandeirantes = {
 		merchants = 1
+		infantry_power = 0.05
 	}
 	royal_absolutism = {
-		build_cost = -0.15
-		yearly_absolutism = 0.5
+		build_cost = -0.05
+		development_cost = -0.05
 	}
 	por_royal_military_academy = {
 		defensiveness = 0.1
@@ -1287,6 +1294,7 @@ BUR_Ideas = {
 	
 	golden_fleece = {
 		prestige = 1
+		range = 0.5
 	}
 	compagnies_ordonnance = {
 		merc_maintenance_modifier = -0.15
@@ -1302,6 +1310,7 @@ BUR_Ideas = {
 	}
 	freedom_of_worship = {
 		tolerance_heretic = 2
+		global_colonial_growth = 25
 	}
 	bur_regimental_system = {
 		global_manpower_modifier = 0.25
@@ -2071,11 +2080,11 @@ BOH_ideas = {
 ITA_ideas = {
 	start = {
 		global_trade_power = 0.20
-		improve_relation_modifier = 0.50
+		interest = -0.5
 	}
 	
 	bonus = {
-		defensiveness = 0.20
+		discipline = 0.05
 	}
 	
 	trigger = {
@@ -2085,25 +2094,28 @@ ITA_ideas = {
 	
 	no_a_geographical_construct = {
 		stability_cost_modifier = -0.10
+		technology_cost = -0.10
 	}
 	tradition_of_the_legion = {
-		infantry_power = 0.15
+		infantry_power = 0.20
 	}
 	mare_nostrum = {
-		galley_cost = -0.15
-		galley_power = 0.20
+		galley_cost = -0.20
+		galley_power = 0.10
 	}
 	office_of_censor = {
-		global_manpower_modifier = 0.33
+		global_manpower_modifier = 0.25
 	}
 	italian_tax_reform = {
-		global_tax_modifier = 0.15
+		global_trade_goods_size_modifier = 0.10
 	}
 	heir_to_the_empire = {
 		prestige = 1
+		legitimacy = 1
+		republican_tradition = 0.5
 	}
 	path_to_citizenship = {
-		core_creation = -0.25
+		development_cost = -0.10
 	}
 }
 
@@ -2791,7 +2803,7 @@ PAP_ideas = {
 		global_tax_modifier = 0.2
 	}
 	glory_of_rome = {
-		prestige_decay = -0.01
+		land_morale = 0.20
 	}
 	donation_of_constantine = {
 		fabricate_claims_cost = -0.25
@@ -3980,8 +3992,8 @@ TRE_ideas = {
 
 GEO_ideas = {
 	start = {
-		defensiveness = 0.25
-		infantry_power = 0.1
+		defensiveness = 0.40
+		infantry_power = 0.2
 	}
 	
 	bonus = {
@@ -3998,16 +4010,17 @@ GEO_ideas = {
 	
 	bagrationi_dynasty = {
 		heir_chance = 0.5
-		legitimacy = 0.5
+		legitimacy = 1
 	}
 	georgian_isolation = {
-		improve_relation_modifier = 0.3
+		land_morale = 0.05
 	}
 	geo_legacy_of_saint_nino = {
 		tolerance_own = 2
 	}
 	restoration_of_fortresses_and_churches = {
 		build_cost = -0.1
+		development_cost = -0.1 
 	}
 	sadrosho_districts = {
 		manpower_recovery_speed = 0.2
@@ -4016,7 +4029,7 @@ GEO_ideas = {
 		war_exhaustion = -0.02
 	}
 	georgian_embassies = {
-		diplomatic_reputation = 1
+		discipline = 0.05
 	}
 }
 

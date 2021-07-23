@@ -181,7 +181,7 @@ barracks = {
 }
 
 shipyard = {
-	cost = 100
+	cost = 300
 	time = 12
 	build_trigger = {
 		has_port = yes
@@ -190,6 +190,7 @@ shipyard = {
 		naval_forcelimit = 2
 		ship_recruit_speed = -0.25
 		local_ship_repair = 0.25
+		allowed_num_of_buildings = 1
 	}
 
 	ai_will_do = {
@@ -245,7 +246,7 @@ fort_15th = {
 
 coastal_defence = {
 
-	cost = 100
+	cost = 150
 	time = 12
 	build_trigger = {
 		has_port = yes
@@ -338,13 +339,14 @@ courthouse = {
 }
 
 dock = {
-	cost = 100
+	cost = 300
 	time = 12
 	build_trigger = {
 		has_port = yes
 	}
 	modifier = {
 		local_sailors_modifier = 0.5
+		allowed_num_of_buildings = 1
 	}
 	
 	on_built = {
@@ -617,7 +619,7 @@ trade_depot = {
 }
 
 grand_shipyard = {
-	cost = 300
+	cost = 600
 	time = 12
 
 	make_obsolete = shipyard
@@ -629,6 +631,7 @@ grand_shipyard = {
 		naval_forcelimit = 4
 		ship_recruit_speed = -0.50
 		local_ship_repair = 0.50
+		allowed_num_of_buildings = 1
 	}
 
 	ai_will_do = {
@@ -869,7 +872,7 @@ town_hall = {
 }
 
 drydock = {
-	cost = 300
+	cost = 600
 	time = 12
 
 	make_obsolete = dock
@@ -880,6 +883,7 @@ drydock = {
 
 	modifier = {
 		local_sailors_modifier = 1.0
+		allowed_num_of_buildings = 1
 	}
 	
 	on_built = {

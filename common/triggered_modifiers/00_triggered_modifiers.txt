@@ -411,7 +411,6 @@ submission_to_emperor = {
 
 	global_unrest = 3
 	stability_cost_modifier = 0.1
-	prestige = -1
 }
 
 
@@ -818,22 +817,6 @@ great_peasants_war_concessions_triggered_modifier = {
 	global_tax_modifier = -0.05
 }
 
-######################################
-# Pope is in the empire
-######################################
-
-pope_in_hre_triggered_modifier = {
-	potential = {
-		PAP = { is_part_of_hre = yes }
-		religion = catholic
-	}
-	trigger = {
-		PAP = { is_part_of_hre = yes }
-		religion = catholic
-		NOT = { is_part_of_hre = yes }
-	}
-	prestige = -0.5
-}
 
 ######################################
 # The Italian Wars
