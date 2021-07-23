@@ -87,6 +87,13 @@ vassal = {
 	end_date = 1469.2.4
 }
 
+vassal = {
+	first = QAR
+	second = AKK
+	start_date = 1435.1.1
+	end_date = 1469.2.4
+}
+
 #Biapis
 
 alliance = {

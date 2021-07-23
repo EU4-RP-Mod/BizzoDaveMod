@@ -5,7 +5,7 @@ controller = VEN
 culture = greek
 religion = orthodox
 capital = "Athens"
-trade_goods = grain
+trade_goods = silk
 hre = no
 base_tax = 4 
 base_production = 4
@@ -23,7 +23,7 @@ center_of_trade = 1
 
 
 1399.1.1 = { add_core = BYZ }
-1402.1.1 = { owner = ATH controller = ATH remove_core = VEN }
+1402.1.1 = { owner = ATH controller = ATH }
 1453.5.30 = { add_core = TUR } # The fall of the Byzantine Empire
 1458.1.1 = { owner = TUR controller = TUR }
 1502.1.1 = { remove_core = BYZ }

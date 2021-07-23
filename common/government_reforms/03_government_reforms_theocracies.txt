@@ -164,11 +164,12 @@ kingdom_of_god_reform = {
 		}
 	}
 	modifiers = {
-		global_manpower_modifier = 0.1
+		global_manpower_modifier = 0.2
 		prestige = 1
 		devotion = 1
 		appoint_cardinal_cost = -0.3
 		papal_influence_from_cardinals = 1.0
+		development_cost = -0.10
 	}
 	allow_normal_conversion = yes
 	lock_level_when_selected = yes

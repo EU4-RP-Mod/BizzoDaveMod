@@ -1,5 +1,5 @@
-owner = AMG
-controller = AMG
+owner = FRA
+controller = FRA
 capital = "Guéret"
 is_city = yes
 culture = gascon
@@ -11,6 +11,7 @@ trade_goods = livestock
 base_manpower = 2
 add_core = AMG
 add_core = GUY
+add_core = FRA
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

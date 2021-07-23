@@ -941,7 +941,7 @@ upper_franconia_area = { #4
 }
 
 upper_swabia_area = { #4 (East Swabia)
-	68 1868 4711 1872
+	68 1868 4711 1872 4710
 }
 
 northern_saxony_area = { #4 (Saxe-Altmark)
@@ -971,7 +971,7 @@ hinter_pommern_area = { #3
 }
 
 tirol_area = { #5
-	73 110 1768 4710 4758
+	73 110 1768 4758
 }
 
 austria_proper_area = { #5
@@ -1138,16 +1138,12 @@ transdanubia_area = { #5
 # Caucasia 							   #
 ########################################
 
-imereti_area = { #3
-	422 462 1856
-}
-
 samtskhe_area = { #3
 	2196 2204 4303 330 331
 }
 
 kartli_kakheti_area = { #3
-	423 2203 4301
+	423 2203 4301 422 462 1856
 }
 
 armenia_area = { #5

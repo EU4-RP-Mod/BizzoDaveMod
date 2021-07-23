@@ -1,7 +1,7 @@
 # 2976 - Perugia, formerly Umbria
 
-owner = PGA
-controller = PGA
+owner = PAP
+controller = PAP
 culture = umbrian 
 religion = catholic 
 hre = no
@@ -12,6 +12,7 @@ base_manpower = 1
 capital = "Perugia" 
 is_city = yes
 add_core = PGA
+add_core = PAP
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
