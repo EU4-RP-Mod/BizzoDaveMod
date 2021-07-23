@@ -16,6 +16,22 @@ colonists_one = {
 	}
 	colonists = 1
 }
+colonists_two = {
+	potential = {
+	}
+	trigger = {
+		has_country_flag = colonists_two
+	}
+	colonists = 1
+}
+colonists_three = {
+	potential = {
+	}
+	trigger = {
+		has_country_flag = colonists_three
+	}
+	colonists = 1
+}
 
 east_indian_trade_route = {
 	potential = {

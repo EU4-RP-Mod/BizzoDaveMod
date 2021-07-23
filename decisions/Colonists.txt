@@ -2,30 +2,65 @@ country_decisions = {
 	get_colonist = {
 			major = yes
 			potential = {
-				NOT = { has_country_flag = colonist_one }
+				NOT = { has_country_flag = colonists_one }
 			}
 			allow = {
 				treasury = 2500
 				adm_tech = 5
 			}
 			effect = {
-				set_country_flag = colonist_one
-				
+				set_country_flag = colonists_one
 				add_treasury = -2500
-				hidden_effect = {
-					
-				}
-				mod
 			}
 			ai_will_do = {
-				factor = 1
+				factor = 0
+			}
+	}
+	get_colonist_two = {
+			major = yes
+			potential = {
+				AND={
+					has_country_flag = colonists_one
+					NOT = { has_country_flag = colonists_two }
+				}
+			}
+			allow = {
+				treasury = 5000
+				adm_tech = 10
+			}
+			effect = {
+				set_country_flag = colonists_two
+				add_treasury = -5000
+			}
+			ai_will_do = {
+				factor = 0
 			}
 		}
-
+	get_colonist_three = {
+		major = yes
+		potential = {
+			AND={
+				has_country_flag = colonists_one
+				has_country_flag = colonists_two
+				NOT = { has_country_flag = colonists_three }
+			}
+		}
+		allow = {
+			treasury = 7500
+			adm_tech = 15
+		}
+		effect = {
+			set_country_flag = colonists_three	
+			add_treasury = -7500
+		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
+		
 	get_conquistador = {
 		potential = {
-			has_country_flag = colonist_one
+			has_country_flag = colonists_one
 		}
 		allow = {
 			mil_power= 50
@@ -38,7 +73,7 @@ country_decisions = {
 	}
 	get_explorer = {
 		potential = {
-			has_country_flag = colonist_one
+			has_country_flag = colonists_one
 		}
 		allow = {
 			dip_power= 50

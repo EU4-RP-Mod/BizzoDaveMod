@@ -283,7 +283,6 @@ stonehenge = {
 	build_trigger = {
 		OR = {
 			AND = {
-				religion_group = pagan
 				has_owner_religion = yes
 			}
 			AND = {
@@ -310,7 +309,6 @@ stonehenge = {
 	can_use_modifiers_trigger = {
 		OR = {
 			AND = {
-				religion_group = pagan
 				has_owner_religion = yes
 			}
 			AND = {
@@ -327,7 +325,6 @@ stonehenge = {
 	can_upgrade_trigger = {
 		OR = {
 			AND = {
-				religion_group = pagan
 				has_owner_religion = yes
 			}
 			AND = {
@@ -1162,7 +1159,6 @@ forbidden_city = {
 
 	#can we build it?
 	build_trigger = {
-		religion = confucianism
 		has_owner_religion = yes
 	}
 
@@ -1178,13 +1174,11 @@ forbidden_city = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		religion = confucianism
 		has_owner_religion = yes
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		religion = confucianism
 		has_owner_religion = yes
 	}
 
