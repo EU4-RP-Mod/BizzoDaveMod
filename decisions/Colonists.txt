@@ -18,9 +18,54 @@ country_decisions = {
 				mod
 			}
 			ai_will_do = {
+				factor = 0
+			}
+		}
+	get_colonist_tech10 = {
+			major = yes
+			potential = {
+				NOT = { has_country_flag = colonist_two }
+			}
+			allow = {
+				treasury = 5000
+				adm_tech = 10
+			}
+			effect = {
+				set_country_flag = colonist_two
+				
+				add_treasury = -5000
+				hidden_effect = {
+					
+				}
+				mod
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	get_colonist_tech15 = {
+			major = yes
+			potential = {
+				NOT = { has_country_flag = colonist_three }
+			}
+			allow = {
+				treasury = 7500
+				adm_tech = 15
+			}
+			effect = {
+				set_country_flag = colonist_three
+				
+				add_treasury = -7500
+				hidden_effect = {
+					
+				}
+				mod
+			}
+			ai_will_do = {
 				factor = 1
 			}
 		}
+		
 
 	}
 	get_conquistador = {
