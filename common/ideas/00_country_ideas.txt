@@ -2080,11 +2080,11 @@ BOH_ideas = {
 ITA_ideas = {
 	start = {
 		global_trade_power = 0.20
-		improve_relation_modifier = 0.50
+		interest = -0.5
 	}
 	
 	bonus = {
-		defensiveness = 0.20
+		discipline = 0.05
 	}
 	
 	trigger = {
@@ -2094,25 +2094,28 @@ ITA_ideas = {
 	
 	no_a_geographical_construct = {
 		stability_cost_modifier = -0.10
+		technology_cost = -0.10
 	}
 	tradition_of_the_legion = {
-		infantry_power = 0.15
+		infantry_power = 0.20
 	}
 	mare_nostrum = {
-		galley_cost = -0.15
-		galley_power = 0.20
+		galley_cost = -0.20
+		galley_power = 0.10
 	}
 	office_of_censor = {
-		global_manpower_modifier = 0.33
+		global_manpower_modifier = 0.25
 	}
 	italian_tax_reform = {
-		global_tax_modifier = 0.15
+		global_trade_goods_size_modifier = 0.10
 	}
 	heir_to_the_empire = {
 		prestige = 1
+		legitimacy = 1
+		republican_tradition = 0.5
 	}
 	path_to_citizenship = {
-		core_creation = -0.25
+		development_cost = -0.10
 	}
 }
 
@@ -2800,7 +2803,7 @@ PAP_ideas = {
 		global_tax_modifier = 0.2
 	}
 	glory_of_rome = {
-		prestige_decay = -0.01
+		land_morale = 0.20
 	}
 	donation_of_constantine = {
 		fabricate_claims_cost = -0.25
@@ -3989,8 +3992,8 @@ TRE_ideas = {
 
 GEO_ideas = {
 	start = {
-		defensiveness = 0.25
-		infantry_power = 0.1
+		defensiveness = 0.40
+		infantry_power = 0.2
 	}
 	
 	bonus = {
@@ -4007,16 +4010,17 @@ GEO_ideas = {
 	
 	bagrationi_dynasty = {
 		heir_chance = 0.5
-		legitimacy = 0.5
+		legitimacy = 1
 	}
 	georgian_isolation = {
-		improve_relation_modifier = 0.3
+		land_morale = 0.05
 	}
 	geo_legacy_of_saint_nino = {
 		tolerance_own = 2
 	}
 	restoration_of_fortresses_and_churches = {
 		build_cost = -0.1
+		development_cost = -0.1 
 	}
 	sadrosho_districts = {
 		manpower_recovery_speed = 0.2
@@ -4025,7 +4029,7 @@ GEO_ideas = {
 		war_exhaustion = -0.02
 	}
 	georgian_embassies = {
-		diplomatic_reputation = 1
+		discipline = 0.05
 	}
 }
 

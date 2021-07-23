@@ -749,7 +749,7 @@ quantity_ideas = {
 	category = MIL
 
 	bonus = {
-		land_forcelimit_modifier  = 0.40
+		land_forcelimit_modifier  = 0.35
 		naval_forcelimit_modifier = 0.20
 	}
 	mass_army = {
@@ -795,6 +795,7 @@ agriculture_ideas = {
 
 	additional_colonists = {
 		movement_speed = 0.10
+		global_supply_limit_modifier = 0.33
 	}
 	additional_merchants = {
 		build_cost = -0.10
