@@ -28,7 +28,7 @@ gc_aragon_1 = {
 		required_missions = { }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1298
+				province_id = 1304
 				province_id = 1295
 				AND = {
 					OR = {
@@ -46,10 +46,10 @@ gc_aragon_1 = {
 			1295 = {
 				trade_share = {
 					country = ROOT
-					share = 70
+					share = 60
 				}
 			}
-			1298 = {
+			1304 = {
 				trade_share = {
 					country = ROOT
 					share = 15
@@ -67,14 +67,14 @@ gc_aragon_1 = {
 		effect = {
 			set_country_flag = ara_consulate_flag
 			country_event = { id = flavor_ara.1 }
-			liguria_area = {
+			central_italy_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			corsica_sardinia_area = {
+			lazio_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -146,7 +146,7 @@ gc_aragon_1 = {
 		effect = {
 			add_country_modifier = {
 				name = "industria_sedera"
-				duration = 7300
+				duration = 14600
 			}
 		}
 	}
@@ -197,8 +197,8 @@ gc_aragon_2 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = corsica_sardinia_area
-				area = liguria_area
+				area = lazio_area
+				area = central_italy_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -206,11 +206,11 @@ gc_aragon_2 = {
 		}
 				
 		trigger = {
-			liguria_area = {
+			lazio_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			corsica_sardinia_area = {
+			central_italy_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -218,7 +218,7 @@ gc_aragon_2 = {
 				limit = {
 					has_dlc = "Dharma"
 				}
-				101 = {
+				220 = {
 					OR = {
 						province_has_center_of_trade_of_level = 3
 						development = 30
@@ -226,19 +226,12 @@ gc_aragon_2 = {
 				}
 			}
 			else = {
-				101 = {
+				220 = {
 					development = 30
 				}
 			}
 		}
 		effect = {
-			venetia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			tuscany_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -292,7 +285,7 @@ gc_aragon_2 = {
 				add_base_production = 3
 				add_province_modifier = {
 					name = "barcelona_guilds"
-					duration = 7300
+					duration = -1
 				}
 			}
 		}
@@ -469,8 +462,8 @@ gc_aragon_3 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = venetia_area
-				province_id = 1308
+				area = tuscany_area
+				province_id = 1304
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -478,23 +471,16 @@ gc_aragon_3 = {
 		}
 		
 		trigger = {
-			venetia_area = {
+			tuscany_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			1308 = {
+			1304 = {
 				is_strongest_trade_power = ROOT
 			}
 		}
 		effect = {
 			lombardy_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			po_valley_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -531,6 +517,8 @@ gc_aragon_3 = {
 		
 		provinces_to_highlight = {
 			region = italy_region
+			NOT = { area = po_valley_area }
+			NOT = { area = venetia_area }
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -538,10 +526,12 @@ gc_aragon_3 = {
 		
 		trigger = {
 			italy_region = {
+				NOT = { area = po_valley_area }
+				NOT = { area = venetia_area }
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-		}
+		}	
 		effect = {
 			east_adriatic_coast_area = {
 				limit = {
@@ -573,6 +563,7 @@ gc_aragon_3 = {
 			}
 		}
 	}
+
 	gc_ara_navarra = {
 		icon = mission_have_two_subjects
 		required_missions = {  }
@@ -1108,14 +1099,14 @@ gc_aragon_5 = {
 			num_of_admirals = 1
 		}
 		effect = {
-			barbary_coast_area = {
+			tunisia_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
-			algiers_area = {
+			kabylia_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
@@ -1131,8 +1122,8 @@ gc_aragon_5 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = barbary_coast_area
-				area = algiers_area
+				area = tunisia_area
+				area = kabylia_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1140,11 +1131,11 @@ gc_aragon_5 = {
 		}
 		
 		trigger = {
-			barbary_coast_area = {
+			tunisia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			algiers_area = {
+			kabylia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1153,15 +1144,15 @@ gc_aragon_5 = {
 			add_country_modifier = {
 				name = "refoming_barbary_pirates"
 				duration = 7300
-			}
-			kabylia_area = {
+		    }
+			tripolitania_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
-			tunisia_area = {
+			djerba_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
@@ -1176,8 +1167,8 @@ gc_aragon_5 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = kabylia_area
-				area = tunisia_area
+				area = tripolitania_area
+				area = djerba_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1185,11 +1176,11 @@ gc_aragon_5 = {
 		}
 		
 		trigger = {
-			kabylia_area = {
+			tripolitania_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			tunisia_area = {
+			djerba_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

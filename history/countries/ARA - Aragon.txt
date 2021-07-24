@@ -66,17 +66,6 @@ add_army_professionalism = 0.05
 	clear_scripted_personalities = yes
 	add_ruler_personality = well_connected_personality
 	add_ruler_personality = architectural_visionary_personality
-	heir = {
-		name = "Joan"
-		monarch_name = "Joan II"
-		dynasty = "de Trastámara"
-		birth_date = 1397.6.29
-		death_date = 1479.1.20
-		claim = 95
-		adm = 4
-		dip = 1
-		mil = 0
-	}
 	queen = {
 		country_of_origin = CAS
 		name = "Maria"

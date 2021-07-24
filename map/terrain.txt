@@ -645,7 +645,7 @@ categories =  {
 			379 381 382 406 412 430 431 1854 1855 2219 2314 4292 4297 4298 #Levant
 			1222 4040 #Central Africa
 			4411 4421 4435 4437 4454 4455 4456 4463 4503 4504 4505 4509 #India
-			4549 4562 4563 4564 4547 4557# new provinces 1.28
+			4562 4563 4564 4547 4557# new provinces 1.28
 			4628 4630 # new provinces Mesoamerica 1.28
 			
 			2736 4863 4861 4855 1094 2733
@@ -692,7 +692,7 @@ categories =  {
 			4110 #Scotland
 			23 24 370 2752 #Norway
 			154 162 263 1318 2960 2968 2970 4238 #Central Europe
-			216 228 2755 2989 #Iberia
+			216 228 2755 2989 4549 #Iberia
 			323 2202 4299 4305 #Anatolia and Caucasus
 			736 1047 4228  #Korea & Manchuria
 			2986 4391 #Italy & France
