@@ -1,0 +1,170 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 136  38  42 }
+
+revolutionary_colors = { 4  8  4 }
+
+historical_score = 400
+
+historical_idea_groups = {
+	maritime_ideas
+	quantity_ideas
+	religious_ideas
+	trade_ideas
+	naval_ideas
+	economic_ideas
+	innovativeness_ideas
+	offensive_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	spanish_tercio
+	french_caracolle
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Ferran #0" = 40
+	"Alfons #4" = 20
+	"Joan #1" = 20
+	"Carles #0" = 10
+	"Pere #4" = 5
+	"Sanç #1" = 5
+	"Enric #0" = 5
+	"Jaume #2" = 5
+	"Martí #0" = 20
+	"Andreu #0" = 0
+	"Antoni #0" = 0
+	"Arnau #0" = 0
+	"Ausiŕs #0" = 0
+	"Bartomeu #0" = 0
+	"Bernat #0" = 0
+	"Cčsar #0" = 0
+	"Domčnec #0" = 0
+	"Felip #0" = 0
+	"Francesc #0" = 0
+	"Frederic #0" = 0
+	"Gaspar #0" = 0
+	"Gil #0" = 0
+	"Gonçal #0" = 0
+	"Guillem #0" = 0
+	"Hug #0" = 0
+	"Ignasi #0" = 0
+	"Ildefons #0" = 0
+	"Jeroni #0" = 0
+	"Jordi #0" = 0
+	"Josep #0" = 0
+	"Llorenç #0" = 0
+	"Lluís #0" = 0
+	"Pere Lluís #0" = 0
+	"Ponç #0" = 0
+	"Ramon #0" = 0
+	"Roderic #0" = 0
+	"Simeó #0" = 0
+	"Tomŕs #0" = 0
+	"Dídac #0" = 0
+	"García #0" = 0
+	
+	"Alejandra #0" = -5
+	"Candela #0" = -5
+	"Estrella #0" = -5
+	"Carlo #3" = 80
+	"Ferdinando #0" = 80
+	"Filippo #0" = 60
+	"Alfonso #0" = 40
+	"Federigo #0" = 20
+	"Ladislao #0" = 20
+	"Gioachino #0" = 20
+	"Achille #0" = 15
+	"Gabriele #0" = 15
+	"Alberto #0" = 10
+	"Antonio #0" = 10
+	"Cesare #0" = 10
+	"Francesco #0" = 10
+	"Giovanni #0" = 10
+	"Giuseppe #0" = 10
+	"Leopoldo #0" = 10
+	"Adriano #0" = 0
+	"Alessandro #0" = 0
+	"Alfredo #0" = 0
+	"Bartolomeo #0" = 0
+	"Benedetto #0" = 0
+	"Claudio #0" = 0
+	"Enzo #0" = 0
+	"Fabio #0" = 0
+	"Fabrizio #0" = 0
+	"Gaspare #0" = 0
+	"Leandro #0" = 0
+	"Marco #0" = 0
+	"Martino #0" = 0
+	"Nestore #0" = 0
+	"Paolo #0" = 0
+	"Pietro #0" = 0
+	"Raniero #0" = 0
+	"Roberto #0" = 0
+	"Salvatore #0" = 0
+	"Vicenzo #0" = 0
+	
+	"Giovanna #1" = -15
+	"Julia #0" = -5
+	"Carlotta #0" = -5
+	"Isabella #0" = -1
+}
+
+leader_names = {
+	"de Alagón" Amic d'Aragó Arbués d'Ŕustria "de Ayerbe"
+	Balaguer Barceló "de Belchite" Berguedŕ Bielsa "de Borja" "de Cabrera" Cajal Colom
+	Domčnec d'Empúries "Fernández de Hijar" Ferrer "Folc de Cardona" Franco
+	Galindo "Gil de Biedma" Gisbert "de Guimerŕ" "de Gotor" "de Gurrea" d'Ixer Loaisa "de Luna"
+	Martorell "de Montcada" Monteagudo Muntaner Oliva Ordovás d'Ors Peńa "Pérez de Coloma" Piquer
+	"de Requesens" "de la Riba" Ripoll "de Ripperdá" 
+	Sastre d'Urgell Vallčs Veldrán Vilamarí Villarroya "de Zaporta" 
+	Pignatelli
+	Carafa
+	Caracciolo
+	Sanseverino
+	Acquaviva
+	Orsini
+	Marzano
+	Pignatelli
+	"d'Avalos"
+	Tocco
+	Mazziotti
+	Coscia
+	Mazzaccara
+	Rizzo
+	Principato Martino Paladini
+}
+
+ship_names = {
+	"Blanca Aurora" "Sant Jacob" Flama Lleona Falcó "La Bonaventura" "Sant Antoni" 
+	"Sant Miquel" "Sant Bernat" "Sant Francesc" "Santa Ágata" "Santa Eulŕlia" 
+	"Sant Gabriel" "Sant Climent" "Sant Jordi" "La Reial" Trinitat "Santa Creu" 
+	"Santa Maria" "Santa Caterina" "Sant Joan Evangelista" "Santa Bŕrbara" 
+	"Sant Pere de Roma" "La Gasela" "Santa Magdalena" "Sant Víctor" Magnana 
+	"Santa Ventura" "Santa Coloma" "Sant Ambrós" "La Garsa"  Achille Amalia Archimede Aretusa Aurora Brava Capitana Capri Caracciolo Carolana Cerere Cingana Constanza Cristina Determinada Etna Fama Fiamma Flora
+	Fortuna Galantuomo Galatea Gioacchino Gioia Gru Guiscardo Gusmana Idra Intrepido Invidia Lampreda Leonessa Letiza "Lucien Charles" Luna Lupa Marchesa
+	Margherita Mendoza Minerva Monarca Ocasion Padrona "Padrone di Davide Imperiale" Pallade Partenope Piemontese "Piramide con Cane" Pugliese Pylades Regina
+	"Regina Isabella" Roma Ruggiero Sagittaria Samnita "San Antonio" "San Carlo" "San Ferdinando" "San Filippo" "San Gabriele" "San Genaro" "San Gioacchino"
+	"San Giorgio" "San Giovanni" "San Giuseppe" "San Guilian" "San Jacopo" "San Leopoldo" "San Luigi" "San Luigi Gonzaga" "San Michele" "San Nicola" "San Pasquale"
+	"Santa Amalia" "Santa Barbara" "Santa Caterina" "Santa Chiara" "Santa Dorotea" "Santa Elisabetta" "Santa Lucia" "Santa Teresa" "Sant'Andrea" "Sant'Angelo"
+	"Santissima Concezione" Sibilla Sicilia Simplon Sirena Sparviero Speranza Stabia Stromboli Tancredi Taranto Terana Turca Urania Venere Vesuvio Vittoria Volpe
+	Vulcano
+}
+
+army_names = {
+	"Terç de $PROVINCE$"
+}

@@ -14,6 +14,7 @@ country_decisions = {
 			NOT = { exists = GBR }
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
+			NOT = { tag = DUO }
 			OR = {
 				primary_culture = english
 				tag = KOI

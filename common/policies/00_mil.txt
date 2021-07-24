@@ -133,7 +133,8 @@ horse_artillery = {
 		full_idea_group = offensive_ideas
 		full_idea_group = economic_ideas
 	}
-	land_fire_damage = 0.10
+	
+	shock_damage = 0.10
 
 	ai_will_do = {
 		factor = 1
@@ -236,7 +237,7 @@ modern_siege_weapons = {
 		full_idea_group = offensive_ideas
 	}
 	
-	shock_damage = 0.10
+	fire_damage = 0.10
 
 	ai_will_do = {
 		factor = 1
@@ -714,7 +715,7 @@ weapon_quality_standards = {
 		full_idea_group = quality_ideas
 	}
 	
-	fire_damage = 0.10
+	land_morale = 0.10
 	
 	ai_will_do = {
 		factor = 2
@@ -773,7 +774,7 @@ the_colonial_nobility_act = {
 		full_idea_group = mercantilism_ideas
 	}
 
-	global_manpower_modifier = 0.25
+	global_manpower_modifier = 0.35
 
 	ai_will_do = {
 		factor = 0.8

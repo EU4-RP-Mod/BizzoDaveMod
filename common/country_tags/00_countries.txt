@@ -138,6 +138,7 @@ PRO	= "countries/Provence.txt"
 SPI	= "countries/SardiniaPiedmont.txt"
 TOU	= "countries/Toulouse.txt"
 BER	= "countries/Berry.txt"
+DUO	= "countries/DualMonarchy.txt"
 	
 #HRE
 AAC = "countries/Aachen.txt" 
@@ -230,6 +231,7 @@ MFA = "countries/Montferrat.txt"
 LUC = "countries/Lucca.txt"
 LAN	= "countries/Florence.txt"
 JAI	= "countries/Malta.txt"
+ARI = "countries/AragonItaly.txt"
 
 #Low Countries
 BRB	= "countries/Brabant.txt"
