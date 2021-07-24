@@ -4,6 +4,7 @@ illius_qui_se_pro_divini = {
     }
 	modifier = {
 		ae_impact = -0.1
+		infantry_fire = 0.20
 	}
     trigger = {
         is_papal_controller = yes
@@ -15,7 +16,7 @@ illius_qui_se_pro_divini = {
 		}
     }
     ai_will_do = {
-        factor = 0
+        factor = 1
     }
 }
 
@@ -34,13 +35,13 @@ apostolicae_servitutis = {
 praeclara_carissimi = {
     modifier = {
 		tolerance_heathen = 2
-        development_cost = -0.05
+        development_cost = -0.10
     }
     trigger = {
         is_papal_controller = yes
     }
     ai_will_do = {
-        factor = 2
+        factor = 1
     }
 }
 
@@ -96,17 +97,17 @@ dei_gratia_rex = {
         is_papal_controller = yes
     }
     ai_will_do = {
-        factor = 1
+        factor = 0
         modifier = {
-            factor = 1
+            factor = 0
             average_unrest = 2
         }
         modifier = {
-            factor = 1
+            factor = 0
             average_unrest = 4
         }
         modifier = {
-            factor = 1
+            factor = 0
             average_unrest = 6
         }
     }
