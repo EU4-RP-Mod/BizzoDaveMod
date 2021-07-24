@@ -1069,7 +1069,7 @@ POR_ideas = {
 	}
 	
 	bonus = {
-		discipline = 0.05
+		infantry_power = 0.05
 	}
 	
 	trigger = {
@@ -1186,7 +1186,7 @@ HAB_ideas = {
 	}
 	habsburg_dominance = {
 		shock_damage_received = -0.10
-		shock_damage = 0.05
+		shock_damage = 0.10
 	}
 	edict_of_restitution = {
 		global_missionary_strength = 0.02
