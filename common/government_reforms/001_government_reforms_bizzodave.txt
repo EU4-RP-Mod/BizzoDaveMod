@@ -1,0 +1,119 @@
+florentine_republic = {
+	icon = signoria_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = florentine_republic
+			tag = LAN
+			tag = TUS
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = { 
+		papal_influence = 2.0
+		max_absolutism = -30
+		republican_tradition = 0.5
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				if = {
+					limit = {
+						trade_goods = cloth
+					}
+					add_province_modifier = { 
+						name = cloth_bonus_prod
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+	}
+	duration = 4
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+		}
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		#can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+		#can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	custom_attributes = {
+	}
+}
+
+japanese_emperor = {
+	icon = "daimyo"
+	allow_normal_conversion = yes
+	potential = {
+		tag = JAP
+	}
+	fixed_rank = 3
+	maintain_dynasty = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	lock_level_when_selected = yes
+	nation_designer_trigger = {
+		culture_group = japanese_g
+		technology_group = chinese
+		capital_scope = { region = japan_region }
+	}
+	modifiers = {
+		diplomats = 1
+		land_morale = 0.1
+		infantry_power = 0.1
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+lithuanian_crown = {
+	icon = "crown"
+	allow_normal_conversion = yes
+	potential = {
+		tag = LIT
+	}
+	nation_designer_cost = 0
+	modifiers = {
+		global_manpower_modifier = 0.10
+		development_cost = 0.10
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				if = {
+					limit = {
+						trade_goods = livestock
+					}
+					add_province_modifier = { 
+						name = livestock_bonus_prod
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+	}
+	
+	ai = {
+		factor = 0.5 #generic
+	}
+}
