@@ -20,7 +20,7 @@ vassal = {
 union = {
 	first = BUR
 	second = LOR
-	start_date = 1444.1.1
+	start_date = 1420.1.1
 	end_date = 1477.1.5
 }
 #vassal = {

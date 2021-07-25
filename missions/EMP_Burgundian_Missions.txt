@@ -387,7 +387,7 @@ emp_burgundy_2 = {
 				limit = { owned_by = root }
 				add_province_modifier = {
 					name = bur_realm_united_mod
-					duration = 7300
+					duration = -1
 				}
 			}
 		}
@@ -424,7 +424,7 @@ emp_burgundy_2 = {
 			low_countries_region = {
 				add_province_modifier = {
 					name = bur_lowlands_secured_mod
-					duration = 7300
+					duration = -1
 				}
 			}
 		}
@@ -436,7 +436,7 @@ emp_burgundy_2 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					province_id = 1269
+					province_id = 1744
 					NOT = { is_strongest_trade_power = root }
 				}
 				AND = {
@@ -493,7 +493,7 @@ emp_burgundy_2 = {
 			}
 		}
 		trigger = {
-			1269 = {
+			1744 = {
 				is_strongest_trade_power = root
 			}
 			if = {
@@ -553,7 +553,7 @@ emp_burgundy_3 = {
 				tooltip = bur_subjects.tooltip
 				NOT = {
 					any_subject_country = {
-						liberty_desire = 1
+						liberty_desire = 40
 					}
 				}
 			}
@@ -565,7 +565,7 @@ emp_burgundy_3 = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = ROOT
+				add_core = ROOT
 			}
 		}
 	}
@@ -1759,13 +1759,8 @@ emp_burgundy_5 = {
 		icon = secure_the_succession
 		required_missions = {  }
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = burgundy_has_secured_succession_tt
-				OR = {
-					has_country_flag = bur_crisis_has_happened
-					is_year = 1500
-				}
-			}
+			is_year = 1480
+			emperor = { alliance_with = ROOT }
 			is_subject = no
 			is_at_war = no
 			NOT = { active_imperial_incident = any }
@@ -1781,25 +1776,6 @@ emp_burgundy_5 = {
 					hre_size = 1
 					is_subject = no
 					has_female_heir = no
-					NOT = {
-						has_country_flag = burgundian_succession_start
-					}
-					OR = {
-						had_country_flag = {
-							flag = bur_crisis_has_happened
-							days = 1825
-						}
-						had_country_flag = {
-							flag = charles_died
-							days = 1825
-						}
-						AND = {
-							NOT = {
-								has_ruler = "Philippe III"
-							}
-							has_heir = yes
-						}
-					}
 				}
 				country_event = {
 					id = incidents_bur_join_empire.1

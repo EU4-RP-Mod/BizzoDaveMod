@@ -19,10 +19,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = NOR
-			AND = {
-				was_tag = NOR
-				NOT = { exists = NOR }
-				tag = SCA
+			tag = SCA
 			}		
 		}
 		NOT = { is_year = 1452 }
@@ -58,11 +55,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = NOR
-			AND = {
-				was_tag = NOR
-				NOT = { exists = NOR }
-				tag = SCA
-			}		
+			tag = SCA	
 		}
 		is_year = 1475
 		NOT = { is_year = 1523 }
@@ -98,11 +91,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = NOR
-			AND = {
-				was_tag = NOR
-				NOT = { exists = NOR }
-				tag = SCA
-			}		
+			tag = SCA	
 		}
 		NOT = { is_year = 1500 }
 		315 = { #Finnmark
@@ -154,11 +143,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = NOR
-			AND = {
-				was_tag = NOR
-				NOT = { exists = NOR }
-				tag = SCA
-			}		
+			tag = SCA		
 		}
 		NOT = { is_year = 1470 }
 		16 = { #Bohuslän

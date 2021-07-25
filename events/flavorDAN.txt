@@ -19,11 +19,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = DAN
-			AND = {
-				was_tag = DAN
-				NOT = { exists = DAN }
-				tag = SCA
-			}		
+			tag = SCA		
 		}
 		is_year = 1500
 		NOT = { is_year = 1550 }
@@ -170,11 +166,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = DAN
-			AND = {
-				was_tag = DAN
-				NOT = { exists = DAN }
-				tag = SCA
-			}		
+			tag = SCA	
 		}
 		is_year = 1500
 		NOT = { is_year = 1520 }
@@ -205,11 +197,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = DAN
-			AND = {
-				was_tag = DAN
-				NOT = { exists = DAN }
-				tag = SCA
-			}		
+			tag = SCA	
 		}
 		is_year = 1566
 		NOT =  { is_year = 1586 }
@@ -257,11 +245,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = DAN
-			AND = {
-				was_tag = DAN
-				NOT = { exists = DAN }
-				tag = SCA
-			}		
+			tag = SCA	
 		}
 		is_free_or_tributary_trigger = yes
 		is_year = 1600
@@ -299,11 +283,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = DAN
-			AND = {
-				was_tag = DAN
-				NOT = { exists = DAN }
-				tag = SCA
-			}		
+			tag = SCA		
 		}
 		is_year = 1650
 		NOT = { is_year = 1750 }
@@ -346,11 +326,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = DAN
-			AND = {
-				was_tag = DAN
-				NOT = { exists = DAN }
-				tag = SCA
-			}		
+			tag = SCA		
 		}
 		is_year = 1600
 		NOT = { is_year = 1620 }
@@ -388,11 +364,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = DAN
-			AND = {
-				was_tag = DAN
-				NOT = { exists = DAN }
-				tag = SCA
-			}		
+			tag = SCA		
 		}
 		is_year = 1673
 		NOT =  { is_year = 1693 }
@@ -507,11 +479,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = DAN
-			AND = {
-				was_tag = DAN
-				NOT = { exists = DAN }
-				tag = SCA
-			}		
+			tag = SCA		
 		}
 		is_year = 1730
 		NOT = { is_year = 1760 }
@@ -560,11 +528,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = DAN
-			AND = {
-				was_tag = DAN
-				NOT = { exists = DAN }
-				tag = SCA
-			}		
+			tag = SCA		
 		}
 		is_year = 1700
 		NOT = { is_year = 1800 }
@@ -606,11 +570,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = DAN
-			AND = {
-				was_tag = DAN
-				NOT = { exists = DAN }
-				tag = SCA
-			}		
+			tag = SCA	
 		}
 		is_year = 1700
 		NOT = { is_year = 1725 }
@@ -642,11 +602,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = DAN
-			AND = {
-				was_tag = DAN
-				NOT = { exists = DAN }
-				tag = SCA
-			}		
+			tag = SCA		
 		}
 		is_year = 1700
 		NOT = { is_year = 1725 }
@@ -682,11 +638,7 @@ country_event = {
 		has_consort_regency = no
 		OR = {
 			tag = DAN
-			AND = {
-				was_tag = DAN
-				NOT = { exists = DAN }
-				tag = SCA
-			}		
+			tag = SCA		
 		}
 	}
 	
@@ -718,11 +670,7 @@ country_event = {
 		has_consort_regency = no
 		OR = {
 			tag = DAN
-			AND = {
-				was_tag = DAN
-				NOT = { exists = DAN }
-				tag = SCA
-			}		
+			tag = SCA	
 		}
 	}
 	
@@ -750,11 +698,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = DAN
-			AND = {
-				was_tag = DAN
-				NOT = { exists = DAN }
-				tag = SCA
-			}		
+			tag = SCA	
 		}
 		is_year = 1700
 		NOT = { is_year = 1800 }
@@ -924,11 +868,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = DAN
-			AND = {
-				was_tag = DAN
-				NOT = { exists = DAN }
-				tag = SCA
-			}		
+			tag = SCA		
 		}
 		is_year = 1576
 		NOT = { is_year = 1600 }
@@ -968,11 +908,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = DAN
-			AND = {
-				was_tag = DAN
-				NOT = { exists = DAN }
-				tag = SCA
-			}		
+			tag = SCA		
 		}
 		is_year = 1475
 		NOT = { is_year = 1500 }
@@ -1004,11 +940,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = DAN
-			AND = {
-				was_tag = DAN
-				NOT = { exists = DAN }
-				tag = SCA
-			}		
+			tag = SCA	
 		}
 		is_year = 1480
 		NOT = { is_year = 1500 }

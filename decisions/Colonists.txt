@@ -7,15 +7,16 @@ country_decisions = {
 			allow = {
 				treasury = 2500
 				adm_tech = 5
+				
 			}
 			effect = {
 				set_country_flag = colonists_one
 				add_treasury = -2500
-			}
 			ai_will_do = {
 				factor = 0
 			}
-	}
+	    }
+	}   
 	get_colonist_two = {
 			major = yes
 			potential = {
@@ -25,12 +26,12 @@ country_decisions = {
 				}
 			}
 			allow = {
-				treasury = 5000
+				treasury = 3500
 				adm_tech = 10
 			}
 			effect = {
 				set_country_flag = colonists_two
-				add_treasury = -5000
+				add_treasury = -3500
 			}
 			ai_will_do = {
 				factor = 0
@@ -46,12 +47,12 @@ country_decisions = {
 			}
 		}
 		allow = {
-			treasury = 7500
+			treasury = 4500
 			adm_tech = 15
 		}
 		effect = {
 			set_country_flag = colonists_three	
-			add_treasury = -7500
+			add_treasury = -4500
 		}
 		ai_will_do = {
 			factor = 0
@@ -84,4 +85,37 @@ country_decisions = {
 			create_explorer = { tradition = 20 }
 			}
 	}
+
+get_colonist_historical = {
+			major = yes
+			potential = {
+				NOT = { has_country_flag = colonists_one }
+			}
+			allow = {
+			    if = { 
+				    OR = {
+					    tag = ENG
+						tag = GBR
+						tag = DUO
+						tag = FRA
+						tag = CAS
+						tag = SPA
+						tag = ADU
+						tag = POR
+						tag = BUR
+						tag = SCA
+						tag = JAP
+					}
+				treasury = 500
+				adm_tech = 5
+				}
+			}
+			effect = {
+				set_country_flag = colonists_one
+				add_treasury = -500
+			ai_will_do = {
+				factor = 0
+			}
+	}
+}
 }

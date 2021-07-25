@@ -1153,7 +1153,7 @@ POL_ideas = {
 
 HAB_ideas = {
 	start = {
-		land_morale = 0.15
+		land_morale = 0.10
 		cavalry_power = 0.15
 	}
 	
@@ -1196,7 +1196,7 @@ HAB_ideas = {
 	}
 	hofkriegsrat = {
 		reinforce_speed = 0.3
-		discipline = 0.05
+		shock_damage_received = -0.10
 	}
 }
 
@@ -1301,10 +1301,11 @@ BUR_Ideas = {
 		range = 0.5
 	}
 	compagnies_ordonnance = {
-		merc_maintenance_modifier = -0.15
+		naval_forcelimit_modifier = 0.25
 	}
 	bur_estates_general = {
 		mercenary_manpower = 0.5
+		merc_maintenance_modifier = -0.15
 	}
 	reform_of_feudal_army = {
 		discipline = 0.05
@@ -15996,5 +15997,45 @@ DUO_ideas = {
 	}
 	DUO_egalite_fraternity = {
 		fire_damage_received = -0.10
+	}
+}
+SCA_ideas = {
+	start = {
+		infantry_power = 0.2
+		ship_durability = 0.05
+	}
+
+	bonus = {
+		leader_land_shock = 1
+	}
+	
+	trigger = {
+		tag = SCA
+	}
+	free = yes		#will be added at load.
+
+	SCA_och_riksdag = {
+		legitimacy = 1
+		possible_policy = 1
+	}
+	SCA_steel = {
+		discipline = 0.05
+	}
+	SCA_3 = {
+		cavalry_power = 0.2
+	}
+	SCA_4 = {
+		naval_forcelimit_modifier = 0.5
+	}
+	SCA_absolutism = {
+		development_cost = -0.05
+		yearly_absolutism = 1
+	}
+	SCA_6 = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	SCA_7 = {
+		global_manpower_modifier = 0.20
+		global_sailors_modifier = 0.20
 	}
 }

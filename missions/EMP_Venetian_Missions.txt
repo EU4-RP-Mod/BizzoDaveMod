@@ -19,7 +19,7 @@ emp_ven_slot_1 = {
 		position = 1
 		
 		trigger = {
-			has_institution = printing_press
+			has_institution = renaissance
 		}
 		effect = {
 			add_country_modifier = {
@@ -91,14 +91,14 @@ emp_ven_slot_2 = {
 		trigger = {
 			112 = {
 				owned_by = ROOT
-				grown_by_development = 10
+				grown_by_development = 3
 			}
 		}
 		effect = {
 			112 = {
 				add_province_modifier = {
 					name = "ven_urban_renewal"
-					duration = 7300
+					duration = -1
 				}
 			}
 		}
@@ -141,7 +141,7 @@ emp_ven_slot_2 = {
 		
 		trigger = {
 			treasury = 500
-			legitimacy_equivalent = 90
+			legitimacy_equivalent = 70
 		}
 		effect = {
 			add_prestige = 50
@@ -243,7 +243,7 @@ emp_ven_slot_3 = {
 			add_mil_power = 50
 			add_country_modifier = {
 				name = ven_venture_captain_recruitment
-				duration = 7300
+				duration = -1
 			}
 		}
 	}
@@ -273,7 +273,14 @@ emp_ven_slot_3 = {
 			grown_by_states = 2
 		}
 		effect = {
-			lombardy_area = {
+			albania_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			croatia_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
@@ -281,13 +288,6 @@ emp_ven_slot_3 = {
 				add_permanent_claim = ROOT
 			}
 			po_valley_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			emilia_romagna_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
@@ -304,22 +304,22 @@ emp_ven_slot_3 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = lombardy_area
+				area = croatia_area
 				area = po_valley_area
-				area = emilia_romagna_area
+				area = albania_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			lombardy_area = {
+			albania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			croatia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			po_valley_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			emilia_romagna_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -432,7 +432,7 @@ emp_ven_slot_4 = {
 			add_navy_tradition = 10
 			define_admiral = {
 				shock = 3
-				fire = 2
+				fire = 4
 				manuever = 4
 				siege = 3
 			}
@@ -451,7 +451,7 @@ emp_ven_slot_4 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					province_id = 1298
+					province_id = 1308
 					NOT = {
 						trade_share = {
 							country = ROOT
@@ -465,12 +465,12 @@ emp_ven_slot_4 = {
 				}
 				AND = {
 					NOT = { exists = GEN }
-					province_id = 101
+					province_id = 112
 				}
 			}
 		}
 		trigger = {
-			1298 = {
+			1308 = {
 				trade_share = {
 					country = ROOT
 					share = 50
@@ -485,16 +485,16 @@ emp_ven_slot_4 = {
 				}
 			}
 			else = {
-				101 = {
+				112 = {
 					controlled_by = ROOT
 				}
 			}
 		}
 		effect = {
-			add_mercantilism = 1
+			add_mercantilism = 10
 			add_country_modifier = {
 				name = "ven_genoese_humiliation"
-				duration = 3650
+				duration = -1
 			}
 		}
 	}
@@ -505,11 +505,11 @@ emp_ven_slot_4 = {
 		required_missions = { emp_ven_reclaim_the_aegean }
 		
 		provinces_to_highlight = {
-			province_id = 151
+			province_id = 321
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			151 = {
+			321 = {
 				owned_by = ROOT
 			}
 		}
@@ -592,7 +592,7 @@ emp_ven_slot_5 = {
 			}
 		}
 		effect = {
-			add_mercantilism = 2
+			add_mercantilism = 10
 			add_dip_power = 100
 		}
 	}
@@ -760,7 +760,7 @@ emp_ven_slot_5 = {
 			}
 		}
 		effect = {
-			add_mercantilism = 2
+			add_mercantilism = 10
 		}
 	}
 	
