@@ -14,49 +14,9 @@ florentine_republic = {
 		papal_influence = 2.0
 		max_absolutism = -30
 		republican_tradition = 0.5
-	}
-	effect = {
-		hidden_effect = {
-			every_owned_province = {
-				if = {
-					limit = {
-						trade_goods = cloth
-					}
-					add_province_modifier = { 
-						name = cloth_bonus_prod
-						duration = -1
-						hidden = yes
-					}
-				}
-			}
-		}
+		prestige = 0.5
 	}
 	duration = 4
-	conditional = {
-		allow = {
-			has_dlc = "Res Publica"
-			NOT = { has_dlc = "Mare Nostrum" }
-		}
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Mare Nostrum"
-			NOT = { has_dlc = "Res Publica" }
-		}
-		#can_form_trade_league = yes
-		trade_city_reform = trading_city
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Res Publica"
-			has_dlc = "Mare Nostrum"
-		}
-		can_use_trade_post = yes
-		#can_form_trade_league = yes
-		trade_city_reform = trading_city
-	}
-	custom_attributes = {
-	}
 }
 
 japanese_emperor = {
@@ -94,7 +54,7 @@ lithuanian_crown = {
 	nation_designer_cost = 0
 	modifiers = {
 		global_manpower_modifier = 0.10
-		development_cost = 0.10
+		land_leader_manuever = 1.0
 	}
 	effect = {
 		hidden_effect = {
@@ -108,6 +68,32 @@ lithuanian_crown = {
 						duration = -1
 						hidden = yes
 					}
+				}
+			}
+			every_owned_province = {
+				if = {
+					limit = {
+						trade_goods = grain
+					}
+					add_province_modifier = { 
+						name = grain_bonus_prod
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							has_province_modifier = livestock_bonus_prod
+							has_province_modifier = grain_bonus_prod
+						}
+					}
+					remove_province_modifier = livestock_bonus_prod
+					remove_province_modifier = grain_bonus_prod
 				}
 			}
 		}
