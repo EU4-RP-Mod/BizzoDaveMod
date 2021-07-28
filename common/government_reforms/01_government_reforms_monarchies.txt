@@ -160,6 +160,28 @@ grand_duchy_reform = {
 	}
 }
 
+Georgian_Kingdom_reform = {
+		icon = "iranian_bureaucracy"
+		allow_normal_conversion = yes
+		potential = {
+				tag = GEO
+		}
+		trigger = {
+				tag = GEO
+		    }
+		modifiers = {
+			governing_capacity = 150
+			num_accepted_cultures = 1
+			nobles_influence_modifier = -0.10
+		}
+		custom_attributes = {
+			enables_Mountain_Towns = yes #-25% development cost in hills and mountains
+		}
+		ai = {
+			factor = 100
+		}
+	}
+
 indian_sultanate_reform = {
 	icon = "indian_sultanate"
 	allow_normal_conversion = yes

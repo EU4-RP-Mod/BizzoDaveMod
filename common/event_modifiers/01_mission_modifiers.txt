@@ -297,6 +297,57 @@ swe_pommerania_conquered = {
 	land_morale = 0.1
 }
 
+swe_strong_economy = {
+    build_cost = -0.15
+	build_time = -0.15
+}
+
+swe_economic_growth = {
+	production_efficiency = 0.20
+}
+
+swe_economic_boom = {
+	global_trade_goods_size_modifier = 0.20
+}
+
+swe_gotland_victory = {
+	manpower_recovery_speed = 0.20
+}
+
+swe_denmark_ports = {
+	global_own_trade_power = 0.20
+}
+swe_stability_start = {
+	global_autonomy = -0.10
+}
+
+swe_stockholm_capital = {
+	local_production_efficiency = 0.20
+	trade_value = 10
+	local_institution_spread = 0.15
+}
+
+swe_iron_mining = {
+	trade_goods_size = 1.0
+}
+
+swe_prestige = {
+	prestige = 1
+}
+
+swe_livonian_workforce = {
+	development_cost = -0.10
+}
+
+swe_baltic_fleet = {
+	naval_morale = 0.10
+}
+
+sweden_organizing_our_provinces_province_modifier = {
+	local_manpower_modifier = 0.10
+}
+
+	
 # Danish missions
 denmark_norway_united = {
 	global_autonomy = -0.05

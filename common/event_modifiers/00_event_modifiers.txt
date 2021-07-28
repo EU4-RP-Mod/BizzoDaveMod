@@ -1740,6 +1740,9 @@ spread_of_enlightenment_ideals = {
 stora_kopparberget_modifier = { #Great Copper Mountain
 	trade_goods_size = 5.0
 }
+improved_stora_kopparberget_modifier = { #Great Copper Mountain
+	trade_goods_size = 5.0
+}
 
 spice_islands_modifier = { #Main entrepots of the Mollucas, point of origin for a large portion of the worlds spices
 	trade_goods_size = 3.0

@@ -2124,4 +2124,72 @@ country_event = {
 	}
 }
 
+# Scandinavia mission evet
+country_event = {
+	id = swe_bdm_scandi
+	title = swe_bdm_scandinavia
+	desc = {
+		trigger = {
+		}
+		desc = new_flavour_bur.4.desc.pope
+	}
+	desc = {
+		trigger = {
+			OR = {
+				NOT = { religion = catholic }
+				is_excommunicated = yes
+				NOT = { exists = PAP }
+				NOT = {
+					PAP = {
+						has_opinion = {
+							who = ROOT
+							value = -10
+						}
+					}
+				}
+			}
+		}
+		desc = new_flavour_bur.4.desc.nopope
+	}
+	picture = GOOD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = swe_bdm_scandi
+		change_tag = SCA
+		if = {
+			limit = {
+				NOT = {
+					government_rank = 2
+				}
+			}
+			set_government_rank = 2
+		}
+		add_prestige = 20
+		if = {
+			limit = {
+				has_custom_ideas = no
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		scandinavia_region = {
+			add_core = SCA
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = { #nah
+		name = new_flavour_bur.4.B
+		add_prestige = 20
+
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
 

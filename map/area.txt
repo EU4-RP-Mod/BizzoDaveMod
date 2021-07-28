@@ -625,23 +625,19 @@ finland_area = { #5
 }
 
 bothnia_area = { #3
-	19 4113 4152
-}
-
-laponia_area = { #3
-	315 1777 4151
+	19 4113 4152 4151
 }
 
 karelia_area = { #4
-	30 33 34 1961
+	30 33 34 
 }
 
 north_karelia = { #3
-	32 309 4124
+	32 309 4124 1961
 }
 
 northern_norway = { #3
-	10 20 21
+	10 20 21 315
 }
 
 eastern_norway = { #4
@@ -855,7 +851,7 @@ ural_area = { #5
 }
 
 pomor_area = { #4
-	313 1776 1958 4258
+	313 1776 1958 4258 1777
 }
 
 arkhangelsk_area = { #4
