@@ -11,7 +11,7 @@ BDM_Branch_1 = {
 	
 	##Mission Start
 	Sweden_economy = {
-		icon = Mission_dominate_home_trade_node.dds
+		icon = Mission_dominate_home_trade_node
 		required_missions {
 			
 		}
