@@ -2428,6 +2428,13 @@ wine_bonus_prod = {
 	local_production_efficiency = 0.5
 }
 
+cloth_bonus_prod = {
+	local_production_efficiency = 0.5
+}
+livestock_bonus_prod = {
+	local_production_efficiency = 0.5
+}
+
 global_holy_war_released_modifier = {
 	global_missionary_strength = 0.03
 	missionaries = 1

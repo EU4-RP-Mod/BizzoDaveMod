@@ -289,32 +289,6 @@ daimyo = {
 	}
 }
 
-japanese_emperor = {
-	icon = "daimyo"
-	allow_normal_conversion = yes
-	potential = {
-		tag = JAP
-	}
-	fixed_rank = 3
-	maintain_dynasty = yes
-	valid_for_nation_designer = yes
-	nation_designer_cost = 0
-	lock_level_when_selected = yes
-	nation_designer_trigger = {
-		culture_group = japanese_g
-		technology_group = chinese
-		capital_scope = { region = japan_region }
-	}
-	modifiers = {
-		diplomats = 1
-		land_morale = 0.1
-		infantry_power = 0.1
-	}
-	custom_attributes = {
-		locked_government_type = yes
-	}
-}
-
 indep_daimyo = {
 	icon = "samurai"
 	allow_normal_conversion = no
@@ -513,7 +487,6 @@ english_monarchy = {
 		has_parliament = yes
 
 		custom_attributes = {
-			blocked_call_diet = no
 		}
 	}
 }

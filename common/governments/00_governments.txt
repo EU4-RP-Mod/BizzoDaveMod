@@ -51,6 +51,7 @@ monarchy = {
 				legion_of_honor_reform
 				imperial_nobility_reform
 				uparaja_reform
+				lithuanian_crown
 			}
 		}
 		bureaucracy = {
@@ -263,6 +264,7 @@ republic = {
 				united_cantons_reform
 				kongsi_federation
 				millenarian_theocracy_reform
+				florentine_republic
 			}
 		}
 		republican_virtues = {
