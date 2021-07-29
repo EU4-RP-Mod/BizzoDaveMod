@@ -11,7 +11,7 @@ BDM_Branch_1 = {
 	
 	##Mission Start
 	Sweden_economy = {
-		icon = mission_high_income
+		icon = Mission_dominate_home_trade_node.dds
 		required_missions {
 			
 		}
@@ -33,7 +33,7 @@ BDM_Branch_1 = {
 	##Mission End
 	##Mission Start
 	Sweden_industry = {
-		icon = mission_rb_hanseatic_east
+		icon = Mission_danzig_or_war.dds
 		required_missions {
 			Sweden_economy
 		}
@@ -60,7 +60,7 @@ BDM_Branch_1 = {
 	##Mission End
 	##Mission Start
 	Sweden_industry2 = {
-		icon = mission_have_manufactories
+		icon = Mission_danzig_or_war.dds
 		required_missions {
 			Sweden_industry
 		}
@@ -111,7 +111,7 @@ BDM_Branch_2 = {
 	
 	##Mission Start
 	Sweden_gotland = {
-		icon = mission_invade_island‎
+		icon = Mission_invade_island.png ‎
 		required_missions {
 			
 		}
@@ -144,7 +144,7 @@ BDM_Branch_2 = {
 	##Mission End
 	##Mission Start
 	Sweden_skaneland = {
-		icon = mission_build_up_to_force_limit
+		icon = Mission_danzig_or_war.dds
 		required_missions {
 			Sweden_gotland
 		}
@@ -188,7 +188,7 @@ BDM_Branch_2 = {
 	##Mission End
 	##Mission Start
 	Sweden_norway = {
-		icon = mission_scandinavian_port_authority
+		icon = Mission_danzig_or_war.dds‎
 		required_missions {
 			Sweden_skaneland
 		}
@@ -225,7 +225,7 @@ BDM_Branch_2 = {
 	##Mission End
 	##Mission Start
 	Sweden_denmark = {
-		icon = mission_galleys_in_port
+		icon = Mission_danzig_or_war.dds
 		required_missions {
 			Sweden_norway
 		}
@@ -264,7 +264,7 @@ BDM_Branch_3 = {
 	
 	##Mission Start
 	Sweden_freedom = {
-		icon = assert_our_sovereignty
+		icon = Assert our sovereignty.dds
 		required_missions {
 			
 		}
@@ -292,7 +292,7 @@ BDM_Branch_3 = {
 	##Mission End
 	##Mission Start
 	Sweden_stockholm = {
-		icon = mission_conquer_riga
+		icon = Mission_danzig_or_war.dds
 		required_missions {
 			Sweden_freedom Sweden_gotland Sweden_neva
 		}
@@ -318,7 +318,7 @@ BDM_Branch_3 = {
 	##Mission End
 	##Mission Start
 	Sweden_mining = {
-		icon = mission_charter_the_voc
+		icon = Mission_danzig_or_war.dds
 		required_missions {
 			Sweden_stockholm
 		}
@@ -372,7 +372,7 @@ BDM_Branch_3 = {
 	##Mission End
 	##Mission Start
 	Sweden_weight = {
-		icon = mission_monarch_in_the_throne_room‎
+		icon = Mission_danzig_or_war.dds‎
 		required_missions {
 			Sweden_mining
 		}
@@ -395,7 +395,7 @@ BDM_Branch_3 = {
 	##Mission End
 	##Mission Start
 	Sweden_scandinavia = {
-		icon = mission_centralized_empire
+		icon = Mission_danzig_or_war.dds
 		required_missions {
 			Sweden_accept Sweden_denmark Sweden_weight
 		}
@@ -430,7 +430,7 @@ BDM_Branch_4 = {
 	
 	##Mission Start
 	Sweden_neva = {
-		icon = mission_adriatic_access
+		icon = Mission_adriatic_access.dds
 		required_missions {
 			
 		}
@@ -487,7 +487,7 @@ BDM_Branch_4 = {
 	##Mission End
 	##Mission Start
 	Sweden_baltic = {
-		icon = mission_indonesian_trade
+		icon = Mission_indonesian_trade.dds
 		required_missions {
 			Sweden_neva
 		}
@@ -534,7 +534,7 @@ BDM_Branch_4 = {
 	##Mission End
 	##Mission Start
 	Sweden_livonians = {
-		icon = mission_rb_unite_the_clans‎
+		icon = Mission_rb_unite_the_clans.dds‎
 		required_missions {
 			Sweden_baltic
 		}
@@ -576,7 +576,7 @@ BDM_Branch_4 = {
 	##Mission End
 	##Mission Start
 	Sweden_accept = {
-		icon = mission_scandinavian_port_authority
+		icon = Mission_scandinavian_port_authority.dds
 		required_missions {
 			Sweden_livonians
 		}
@@ -630,7 +630,7 @@ BDM_Branch_5 = {
 	
 	##Mission Start
 	Sweden_navy = {
-		icon = mission_galleys_in_port
+		icon = Mission_galleys_in_port.dds
 		required_missions {
 			
 		}
@@ -654,7 +654,7 @@ BDM_Branch_5 = {
 	##Mission End
 	##Mission Start
 	Sweden_army = {
-		icon = mission_army_reforms
+		icon = Mission_danzig_or_war.dds
 		required_missions {
 			Sweden_navy
 		}
@@ -673,7 +673,7 @@ BDM_Branch_5 = {
 	##Mission End
 	##Mission Start
 	Sweden_army_industry = {
-		icon = mission_establish_the_musketeers
+		icon = Mission_danzig_or_war.dds
 		required_missions {
 			Sweden_army
 		}
