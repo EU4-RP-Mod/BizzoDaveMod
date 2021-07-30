@@ -1,12 +1,13 @@
 #2779 - Afder
+owner = ADA
+control = ADA
 
+add_core = ADA
 culture = somali
 religion = sunni
 capital = "Afder"
-native_size = 40
-native_ferocity = 4
-native_hostileness = 9 
-trade_goods = unknown
+is_city = yes
+trade_goods = grain
 hre = no
 base_tax = 1 
 base_production = 1

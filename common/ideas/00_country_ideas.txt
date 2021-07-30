@@ -1185,8 +1185,8 @@ HAB_ideas = {
 		interest = -0.5
 	}
 	habsburg_dominance = {
-		shock_damage_received = -0.10
 		shock_damage = 0.10
+		infantry_shock = 0.1
 	}
 	edict_of_restitution = {
 		global_missionary_strength = 0.02
@@ -2367,7 +2367,7 @@ ETH_ideas = {
 		defensiveness = 0.20
 	}
 	diplomatic_demeanor = {
-		diplomatic_reputation = 1
+		land_morale = 0.10
 	}
 	the_ark_of_the_covenant = {
 		missionaries = 1
@@ -7737,7 +7737,7 @@ ORL_ideas = {
 ORM_ideas = {
 	start = {
 		merchants = 1
-		global_foreign_trade_power = 0.1
+		discipline = 0.05
 	}
 
 	bonus = {
@@ -7752,21 +7752,21 @@ ORM_ideas = {
 	orm_a_vast_emporium = {
 		trade_efficiency = 0.1
 	}
+	orm_develop_qeshm_and_ormuz = {
+		development_cost = -0.1
+	}
 	orm_protecting_the_islands = {
 		defensiveness = 0.2
 	}
 	orm_moqarrariya = {
 		stability_cost_modifier = -0.1
+		global_foreign_trade_power = 0.10
 	}
 	orm_far_reaching_diplomacy = {
-		diplomatic_upkeep = 1
-		diplomatic_reputation = 1
+		ship_durability = 0.05
 	}
 	orm_secure_trading_monopoly = {
 		global_trade_power = 0.1
-	}
-	orm_develop_qeshm_and_ormuz = {
-		development_cost = -0.1
 	}
 	orm_ormuzi_navy = {
 		naval_forcelimit_modifier = 0.25
@@ -9543,12 +9543,12 @@ AMA_ideas = {
 
 HSK_ideas = {
 	start = {
-		galley_power = 0.2
+		galley_power = 0.25
 		infantry_power = 0.1
 	}
 	
 	bonus = {
-		global_institution_spread = 0.1
+		discipline = 0.05
 	}
 
 	trigger = {
@@ -9557,27 +9557,29 @@ HSK_ideas = {
 	free = yes
 	
 	hsk_kanrei = {
-		legitimacy = 1
+		naval_morale = 0.10
 	}
 	
 	hsk_branches_and_retainers = {
-		global_unrest = -1
+		global_trade_goods_size_modifier = 0.10
 	}
 	
 	hsk_sakai_city = {
-		global_foreign_trade_power = 0.1
+		ship_durability = 0.05
 	}
 	
 	hsk_leader_of_eastern_army = {
-		land_forcelimit_modifier = 0.2
+		land_forcelimit_modifier = 0.10
+		naval_forcelimit_modifier = 0.25
 	}
 	
 	hsk_ashigaru = {
 		global_manpower_modifier = 0.2
+		global_sailors_modifier = 0.2
 	}
 	
 	hsk_yamabushi = {
-		spy_offence = 0.2
+		heavy_ship_power = 0.10
 	}
 	
 	hsk_horeki_reform = {
@@ -15591,8 +15593,7 @@ SIA_ideas = {
 		idea_cost = -0.1
 	}
 	sia_advanced_elephant_warfare = {
-		cavalry_power = 0.15
-		cavalry_fire = 1
+		cavalry_power = 0.20
 	}
 	sia_experienced_ambassadors = {
 		diplomatic_reputation = 2
@@ -15953,7 +15954,7 @@ ARI_ideas = {
 		global_trade_goods_size_modifier = 0.10
 	}
 	ARI_reformed_admin = {
-		global_autonomy = -0.05
+		development_cost = -0.10
 		merchants = 1
 	}
 	ARI_of_the_little_folk = {
