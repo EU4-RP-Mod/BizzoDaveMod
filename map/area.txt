@@ -1139,7 +1139,11 @@ samtskhe_area = { #3
 }
 
 kartli_kakheti_area = { #3
-	423 2203 4301 422 462 1856
+	423 2203 4301
+}
+
+imereti_area = { #3
+	422 462 1856
 }
 
 armenia_area = { #5

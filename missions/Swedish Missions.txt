@@ -287,6 +287,13 @@ BDM_Branch_3 = {
 					}
 				add_permanent_claim = ROOT
 			}
+			skaneland_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	##Mission End

@@ -282,7 +282,7 @@ modern_firearm_techniques = {
 		full_idea_group = quality_ideas
 	}
 	
-	infantry_power = 0.15
+	artillery_power = 0.10
 
 	ai_will_do = {
 		factor = 1.2		
@@ -584,8 +584,8 @@ inspirational_leaders = {
 		full_idea_group = quantity_ideas
 	}	
 	
-	land_morale = 0.05
-	num_accepted_cultures = 1
+	land_morale = 0.10
+	reinforce_speed = 0.33
 	
 	ai_will_do = {
 		factor = 1.2
@@ -829,16 +829,15 @@ unified_army_command = {
 	
 	potential = {
 		has_idea_group = plutocracy_ideas
-		has_idea_group = influence_ideas
+		has_idea_group = innovativeness_ideas
 	}
 	
 	allow = {
 		full_idea_group = plutocracy_ideas
-		full_idea_group = influence_ideas
+		full_idea_group = innovativeness_ideas
 	}	
 	
-	vassal_forcelimit_bonus = 1
-	reduced_liberty_desire = 10
+	backrow_artillery_damage = 0.15
 	
 	ai_will_do = {
 		factor = 1

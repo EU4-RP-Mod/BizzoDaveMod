@@ -524,10 +524,10 @@ TUR_ideas = {
 		manpower_recovery_speed = 0.2
 	}		
 	timariot_system = {
-		cavalry_power = 0.15
+		cavalry_power = 0.20
 	}
 	autonmous_pashas = {
-		war_exhaustion_cost = -0.10
+		war_exhaustion = -0.03
 	}		
 	lawcode_of_suleiman_01 = {
 		global_tax_modifier = 0.1
@@ -536,7 +536,7 @@ TUR_ideas = {
 		trade_efficiency = 0.10
 	}
 	imperial_school_of_naval_engineering = {
-		global_ship_cost = -0.1
+		artillery_power = 0.10
 	}
 }
 
@@ -1487,7 +1487,7 @@ JAP_ideas = {
 MAM_ideas = {
 	start = {
 		trade_steering = 0.25
-		cavalry_power = 0.10
+		cavalry_power = 0.20
 	}
 	
 	bonus = {
@@ -1500,8 +1500,8 @@ MAM_ideas = {
 	free = yes
 	
 	red_sea_trade = {
-		global_trade_power = 0.05
-		trade_range_modifier = 0.10
+		global_own_trade_power = 0.25
+		merchants = 1
 	}
 	monuments_to_greatness = {
 		prestige = 1
@@ -16038,5 +16038,43 @@ SCA_ideas = {
 	SCA_7 = {
 		global_manpower_modifier = 0.20
 		global_sailors_modifier = 0.20
+	}
+}
+
+BUK_ideas = {
+	start = {
+		cavalry_power = 0.20
+		caravan_power = 0.25
+	}
+
+	bonus = {
+		leader_land_shock = 1
+	}
+	
+	trigger = {
+		tag = BUK
+	}
+	free = yes		#will be added at load.
+
+	logistics_of_khan = {
+		#manpower_recovery_speed = 0.2 (effect taken in GLH_ideas)
+	}
+	BUK_2 = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	tradition_of_conquest = {
+		#core_creation = -0.25 (effect taken in CHG_ideas)
+	}
+	BUK_4 = {
+		discipline = 0.05
+	}
+	BUK_5= {
+		land_morale = 0.10
+	}
+	BUK_6 = {
+		artillery_power = 0.10
+	}
+	glory_of_conquest = {
+		global_manpower_modifier = 0.25
 	}
 }

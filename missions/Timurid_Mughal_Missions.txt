@@ -464,7 +464,7 @@ tim_reconquest_transoxiana = {
 		position = 1
 		
 		trigger = {
-			stability	= 2
+			stability	= 1
 		}
 		
 		effect = {
@@ -496,6 +496,7 @@ tim_reconquest_transoxiana = {
 			}
 		}
 	}
+	
 	
 	tim_transoxiana_one = {
 		icon = mission_central_asian_city
@@ -580,7 +581,6 @@ tim_reconquest_transoxiana = {
 				province_id = 437
 				province_id = 438
 				province_id = 2349
-				province_id = 2214
 				province_id = 441
 				province_id = 2362
 				province_id = 1973
@@ -602,9 +602,6 @@ tim_reconquest_transoxiana = {
 			2349 = {
 				owned_by = ROOT
 			}
-			2214 = {
-				owned_by = ROOT
-			}
 			441 = {
 				owned_by = ROOT
 			}
@@ -622,10 +619,102 @@ tim_reconquest_transoxiana = {
 				name = "tim_steppe_reconquest"
 				duration = 5475
 			}
+	}
+	tim_reconquest_steppe = {
+	slot = 5
+	generic = no
+	ai = yes
+	position = 6
+	potential = {
+		tag = BUK
+	}
+	provinces_to_highlight = {
+			OR = {
+				area = merv_area
+				province_id = 437
+				province_id = 438
+				province_id = 2349
+				province_id = 441
+				province_id = 2362
+				province_id = 1973
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			merv_area = {
+				type = all
+				owned_by = ROOT
+			}
+			437 = {
+				owned_by = ROOT
+			}
+			438 = {
+				owned_by = ROOT
+			}
+			2349 = {
+				owned_by = ROOT
+			}
+			441 = {
+				owned_by = ROOT
+			}
+			2362 = {
+				owned_by = ROOT
+			}
+			1973 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+				jetysuu_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+			kashgaria_area  = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+			tarim_basin_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+			shanshan_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+			ferghana_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+			arys_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+			
+			}
 		}
 	}
-	
 }
+
 
 tim_india = {
 	slot = 3

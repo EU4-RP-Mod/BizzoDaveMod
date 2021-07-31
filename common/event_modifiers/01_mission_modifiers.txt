@@ -2083,7 +2083,6 @@ barcelona_guilds = {
 
 taula_de_canvi = {
 	interest = -0.5
-	inflation_reduction = 0.15
 }
 
 ara_toulon_dockyard = {

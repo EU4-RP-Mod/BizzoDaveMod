@@ -117,6 +117,369 @@ mam_south_missions = {
 		}
 	}
 }
+mam_middle_missions = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = MAM
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+
+mamluks_great_works_of_cairo = {
+		icon = mission_early_game_buildings
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			province_id = 361
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { development = 30 }
+				AND = {
+					NOT = { has_building = workshop }
+					NOT = { has_building = counting_house }
+				}
+				AND = {
+					NOT = { has_building = temple }
+					NOT = { has_building = cathedral }
+				}
+			}
+		}
+		trigger = {
+			owns = 361
+			361 = {
+				development = 30
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					361 = {
+						NOT = { province_has_center_of_trade_of_level = 3 }
+					}
+				}
+				361 = {
+					if = {
+						limit = {
+							NOT = { province_has_center_of_trade_of_level = 1 }
+						}
+						center_of_trade = 3
+					}
+					else_if = {
+						limit = {
+							NOT = { province_has_center_of_trade_of_level = 3 }
+						}
+						add_center_of_trade_level = 2
+					}
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = mamluks_great_works_of_cairo_modifier
+					duration = 9125
+				}
+			}
+		}
+	}
+	
+	mamluks_develop_the_delta = {
+		icon = mission_mosque
+		required_missions = { mamluks_great_works_of_cairo }
+		position = 2
+		provinces_to_highlight = {
+			area = delta_area
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { development = 15 }
+				AND = {
+					NOT = { has_building = workshop }
+					NOT = { has_building = counting_house }
+				}
+			}
+		}
+		trigger = {
+			delta_area = {
+				type = all
+				owned_by = ROOT
+				development = 15
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Dharma"
+				}
+				delta_area = {
+					province_has_center_of_trade_of_level = 2
+				}
+			}
+			else = {
+				358 = {
+					trade_share = {
+						country = ROOT
+						share = 75
+					}
+				}
+			}
+		}
+		effect = {
+			add_years_of_income = 0.5
+			delta_area = {
+				add_province_modifier = {
+					name = mamluks_develop_the_delta_province_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	mamluks_develop_the_nile = {
+		icon = mission_colonial
+		required_missions = { mamluks_develop_the_delta }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					region = egypt_region
+					NOT = { owned_by = ROOT }
+				}
+				AND = {
+					OR = {
+						area = said_area
+						area = vostani_area
+					}
+					NOT = { development = 10 }
+				}
+			}
+		}
+		trigger = {
+			egypt_region = {
+				type = all
+				owned_by = ROOT
+			}
+			said_area = {
+				type = all
+				development = 10
+			}
+			vostani_area = {
+				type = all
+				development = 10
+			}
+		}
+		effect = {
+			4320 = {
+				change_trade_goods = paper
+			}
+			said_area = {
+				add_province_modifier = {
+					name = mamluks_develop_the_nile_province_modifier
+					duration = 10950
+				}
+			}
+			vostani_area = {
+				add_province_modifier = {
+					name = mamluks_develop_the_nile_province_modifier
+					duration = 10950
+				}
+			}
+			dongola_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_nubia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	mamluks_library_of_alexandria = {
+		icon = mission_occupy_alexandria
+		required_missions = { mamluks_develop_the_nile }
+		position = 4
+		provinces_to_highlight = {
+			province_id = 358
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { renaissance = 100 }
+			}
+		}
+		trigger = {
+			treasury = 1000
+			adm_power = 50
+			dip_power = 50
+			mil_power = 50
+			owns = 358
+			358 = {
+				renaissance = 100
+			}
+		}
+		effect = {
+			add_treasury = -1000
+			add_adm_power = -50
+			add_dip_power = -50
+			add_mil_power = -50
+			add_country_modifier = {
+				name = mamluks_library_of_alexandria_modifier
+				duration = -1
+			}
+			358 = {
+				change_trade_goods = paper
+				if = {
+					limit = {
+						NOT = { has_building = university }
+					}
+					add_building = university
+				}
+				else = {
+					add_base_production = 1
+				}
+			}
+		}
+	}
+	mamluks_the_nile_breadbasket = {
+		icon = mission_clear_the_delta
+		required_missions = { mamluks_library_of_alexandria mamluks_lighthouse_of_alexandria }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = delta_area
+				area = bahari_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				AND = {
+					NOT = { has_building = wharf }
+					NOT = { has_building = weapons }
+					NOT = { has_building = textile }
+					NOT = { has_building = tradecompany }
+					NOT = { has_building = farm_estate }
+					NOT = { has_building = mills }
+					NOT = { has_building = plantations }
+					NOT = { has_building = furnace }
+				}
+			}
+		}
+		trigger = {
+			production_leader = {
+				trade_goods = grain
+			}
+			delta_area = {
+				type = all
+				owned_by = ROOT
+				OR = {
+					has_building = wharf
+					has_building = weapons
+					has_building = textile
+					has_building = tradecompany
+					has_building = farm_estate
+					has_building = mills
+					has_building = plantations
+					has_building = furnace
+				}
+			}
+			bahari_area = {
+				type = all
+				owned_by = ROOT
+				OR = {
+					has_building = wharf
+					has_building = weapons
+					has_building = textile
+					has_building = tradecompany
+					has_building = farm_estate
+					has_building = mills
+					has_building = plantations
+					has_building = furnace
+				}
+			}
+		}
+		effect = {
+			delta_area = {
+				add_province_modifier = {
+					name = mamluks_the_nile_breadbasket_province_modifier
+					duration = -1
+				}
+			}
+			bahari_area = {
+				add_province_modifier = {
+					name = mamluks_the_nile_breadbasket_province_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	mamluks_a_new_egyptian_golden_age = {
+		icon = mission_golden_century
+		required_missions = { mamluks_the_nile_breadbasket }
+		position = 6
+		trigger = {
+			has_institution = global_trade
+			prestige = 95
+			if = {
+				limit = {
+					has_dlc = "Common Sense"
+				}
+				government_rank = 3
+			}
+			else = {
+				total_development = 1000
+			}
+			if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+				}
+				OR = {
+					in_golden_age = yes
+					AND = {
+						stability = 3
+						legitimacy_equivalent = 100
+						prestige = 50
+					}
+				}
+			}
+			else = {
+				OR = {
+					AND = {
+						ADM = 5
+						DIP = 5
+						MIL = 5
+					}
+					AND = {
+						stability = 3
+						legitimacy_equivalent = 100
+						prestige = 50
+					}
+				}
+			}
+		}
+		effect = {
+			add_absolutism = 25
+			add_country_modifier = {
+				name = mamluks_a_new_egyptian_golden_age_modifier
+				duration = 7300
+			}
+		}
+	}
+}
 mam_north_missions = {
 	slot = 5
 	generic = no
@@ -160,8 +523,15 @@ mam_north_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
+			358 = {
+				add_center_of_trade_level = 1
+				add_province_modifier = {
+					name = important_natural_harbor
+					duration = -1
+					}
+				}
+			}
 		}
-	}
 	mam_pacify_bedouins = {
 		icon = mission_bedouins
 		required_missions = { mam_alexandria_trade }
