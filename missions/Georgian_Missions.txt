@@ -39,7 +39,7 @@ noble_mission_path = {
 		effect = {
 			add_country_modifier = {
 				name = "loyal_nobility"
-				duration = 20
+				duration = 7300
 			}
 		}
 	}
@@ -62,7 +62,7 @@ noble_mission_path = {
 		effect = {
 			add_country_modifier = {
 				name="developing_geo"
-				duration = 10
+				duration = 3650
 			}
 		}
 	}
@@ -135,7 +135,7 @@ noble_mission_invasion = {
 		effect = {
 			add_country_modifier = {
 				name="war_path_geo"
-				duration = 10
+				duration = 1825
 			}
 			armenia_area = {
 				limit = {
@@ -181,7 +181,7 @@ noble_mission_invasion = {
 		effect = {
 			add_country_modifier ={
 				name = "geo_conquest_of_armenia"
-				duration = 20
+				duration = 7300
 			}
 		}
 	}
@@ -312,7 +312,7 @@ noble_mission_money = {
 			add_treasury = -250
 			add_country_modifier = {
 				name = "thriving_geo_economy"
-				duration = 20
+				duration = 7300
 			}
 		}
 	}
@@ -408,7 +408,7 @@ noble_mission_eco = {
 		effect = {
 			add_country_modifier = {
 				name="geo_kickstarting_eco"
-				duration = 25
+				duration = 9125
 			}
 		}
 	}
@@ -444,7 +444,7 @@ noble_mission_eco = {
 	GEO_shining_mountain = {
 		icon = mission_conquer_50_development
 		required_missions {
-			GEO_fighting_for_god, GEO_integrate_azeri
+			GEO_fighting_for_god, GEO_integrate_azeri, GEO_into_persia
 		}
 		position = 5
 		provinces_to_highlight = {

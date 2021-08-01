@@ -13,14 +13,12 @@ thriving_geo_economy = {
 war_path_geo = {
 	land_morale = 0.10
 	movement_speed = 0.10
-	army_tradition_from_battle = 2.0
+	army_tradition_from_battle = 1.0
 }
 geo_conquest_of_persia = {
-	monarch_military_power = 1
 	prestige = 1.0
 	advisor_cost = -0.1
 	global_unrest = -1.0
-	discipline = 0.025
 }
 geo_kickstarting_eco = {
 	interest = -1.0
@@ -57,7 +55,7 @@ touched_by_god_geo = {
 	missionaries = 2
 	tolerance_heretic = -2
 	tolerance_heathen = -2
-	land_morale	= 0.075
+	land_morale	= 0.05
 	monarch_admin_power	= 1
 	monarch_lifespan = 0.1
 }
