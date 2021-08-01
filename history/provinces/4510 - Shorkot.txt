@@ -1,7 +1,7 @@
 #4510 - Shorkot
 
-owner = SRH
-controller = SRH
+owner = TIM
+controller = TIM
 culture = panjabi
 religion = hinduism
 capital = "Shorkot"
@@ -15,6 +15,7 @@ add_core = DLH
 add_core = MUL
 add_core = PUN
 add_core = SRH
+add_core = TIM
 discovered_by = indian
 discovered_by = muslim 
 discovered_by = ottoman

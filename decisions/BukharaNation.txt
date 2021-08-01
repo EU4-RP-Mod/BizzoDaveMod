@@ -10,7 +10,7 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			tag = SHY
+			tag = TRS
 			NOT = { exists = BUK }
 			NOT = { has_reform = celestial_empire }
 			OR = {
@@ -34,11 +34,12 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 442 	#Bukhara
-			442 = {						#Bukhara				
+			owns_core_province = 441
+			owns_core_province = 476
+			owns_core_province = 440
+			adm_tech = 5
+			442 = {										
 				is_state = yes
-			}
-			NOT = { 
-				overlord_of = SIB
 			}
 		}
 		effect = {
@@ -60,7 +61,9 @@ country_decisions = {
 					NOT = { has_global_flag = bukhara_formed }
 				}
 				442 = {
-					add_base_tax = 2 #Only the first time Bukhara is formed by anyone.
+					add_base_tax = 3
+					add_base_production = 3
+					add_base_manpower = 3
 				}
 			}
 			add_permanent_claim = 441 #Khiva
@@ -82,10 +85,36 @@ country_decisions = {
 				limit = { is_revolutionary = no }
 				add_government_reform = iqta
 			}
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { owned_by = BUK }
+						OR = {
+							region = persia_region
+							region = khorasan_region
+							region = caucasia_region
+						}
+						is_permanent_claim = BUK
+					}
+					remove_claim = BUK
+				}
+				every_province = {
+					limit = {
+						NOT = { owned_by = BUK }
+						OR = {
+							region = persia_region
+							region = khorasan_region
+							region = caucasia_region
+						}
+						is_core = BUK
+					}
+					remove_core = BUK
+				}
+			}
 			change_technology_group = muslim
 			change_unit_type = muslim
 			set_global_flag = bukhara_formed
-			#country_event = { id = ideagroups.1 } #Swap Ideas		#Removed for now, add back if Bukhara gets own ideas
+			country_event = { id = ideagroups.1 } #Swap Ideas		#Removed for now, add back if Bukhara gets own ideas
 			set_country_flag = formed_bukhara_flag
 		}
 

@@ -8296,6 +8296,51 @@ estate_burghers_tropical_nation = {
 	}
 }
 
+estate_burghers_mountain_towns = {
+	icon = privilege_grant_new_world_charter
+	loyalty = 0.1
+	influence = 0.0
+	is_valid = {
+		OR = {
+			tag = GEO
+			tag = SWI
+		}
+	}
+	can_select = {
+	}
+	on_granted = {
+		custom_tooltip = estate_burghers_mountain_town_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+					has_terrain = mountain
+					has_terrain = hills
+					has_terrain = highlands
+					}
+				}
+				add_province_modifier = {
+					name = estate_burghers_mountain_mod
+					duration = -1
+				}
+			}
+		}
+	}
+	on_revoked = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = estate_burghers_mountain_mod
+				}
+				remove_province_modifier = estate_burghers_mountain_mod
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+}
+
 estate_church_lao_animism = {
 	icon = privilege_tolerance_heathen
 	loyalty = -0.05

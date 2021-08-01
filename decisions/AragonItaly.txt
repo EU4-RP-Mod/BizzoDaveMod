@@ -75,6 +75,16 @@ country_decisions = {
 			}
 			set_country_flag = formed_spain_flag
 			add_prestige = 25
+			add_accepted_culture = neapolitan
+			add_accepted_culture = piedmontese
+			add_accepted_culture = umbrian
+			add_accepted_culture = sicilian
+			add_accepted_culture = ligurian
+			add_accepted_culture = romagnan
+			add_accepted_culture = sardinian
+			add_accepted_culture = tuscan
+			add_accepted_culture = lombard
+			add_accepted_culture = maltese
 		}
 		ai_will_do = {
 			factor = 1

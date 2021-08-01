@@ -1139,7 +1139,11 @@ samtskhe_area = { #3
 }
 
 kartli_kakheti_area = { #3
-	423 2203 4301 422 462 1856
+	423 2203 4301
+}
+
+imereti_area = { #3
+	422 462 1856
 }
 
 armenia_area = { #5
@@ -1913,7 +1917,7 @@ south_african_plateau_area = { #5
 ########################################
 
 makran_area = { #5
-	434 575 2231 2232 2233
+	434 575 2232 2233
 }
 
 sistan_area = { #4
@@ -1921,7 +1925,7 @@ sistan_area = { #4
 }
 
 kalat_area = { #3
-	576 577 2068
+	576 577 2068 2231
 }
 
 ferghana_area = { #3

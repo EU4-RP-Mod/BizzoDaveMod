@@ -301,7 +301,7 @@ gc_aragon_2 = {
 		effect = {
 			add_country_modifier = {
 				name = "taula_de_canvi"
-				duration = 7300
+				duration = -1
 			}
 		}
 	}
@@ -1023,38 +1023,6 @@ gc_aragon_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}		
 		trigger = {
-			hudavendigar_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			aydin_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			cukurova_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			kastamonu_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			east_adriatic_coast_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			carinthia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			rascia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			bahari_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 		}
 		effect = {
 			add_mercantilism = 10
@@ -1123,7 +1091,6 @@ gc_aragon_5 = {
 		provinces_to_highlight = {
 			OR = {
 				area = tunisia_area
-				area = kabylia_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1132,10 +1099,6 @@ gc_aragon_5 = {
 		
 		trigger = {
 			tunisia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			kabylia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1159,6 +1122,7 @@ gc_aragon_5 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			add_accepted_culture = tunisian
 		}
 	}
 	gc_ara_tunis = {
