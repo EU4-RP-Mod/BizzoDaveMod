@@ -1018,6 +1018,7 @@ colonial_government = {
 		recover_army_morale_speed = 0.02
 		embracement_cost = -0.1
 		governing_capacity = 100
+		colonists = 1
 	}
 
 	custom_attributes = {
@@ -1048,6 +1049,7 @@ crown_colony_government = {
 		recover_army_morale_speed = 0.02
 		embracement_cost = -0.1
 		governing_capacity = 100
+		colonists = 1
 	}
 
 	custom_attributes = {
@@ -1078,6 +1080,7 @@ private_enterprise_colony_government = {
 		embracement_cost = -0.1
 		merchants = 1
 		production_efficiency = 0.05
+		colonists = 1
 	}
 
 	custom_attributes = {
@@ -1105,9 +1108,9 @@ self_governing_colony_government = {
 	legacy_equivalent = colonial_government_legacy
 	modifiers = {
 		build_cost = -0.1
-		development_cost = -0.1
 		embracement_cost = -0.1
 		state_maintenance_modifier = -0.25
+		colonists = 1
 	}
 
 	custom_attributes = {
