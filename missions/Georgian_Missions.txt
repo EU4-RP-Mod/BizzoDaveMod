@@ -37,7 +37,10 @@ noble_mission_path = {
 			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_country_modifier = {
+				name = "loyal_nobility"
+				duration = 20
+			}
 		}
 	}
 	##Mission End
@@ -52,10 +55,15 @@ noble_mission_path = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			armenia_area = {
+				development = 20
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_country_modifier = {
+				name="developing_geo"
+				duration = 10
+			}
 		}
 	}
 	##Mission End
@@ -82,13 +90,30 @@ noble_mission_invasion = {
 		}
 		position = 1
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			AND = {
+				OR={
+					philosopher = 1
+					natural_scientist = 1
+					artist = 1
+				}
+				OR={
+					diplomat = 1
+					trader = 1
+					statesman = 1
+				}
+				OR={
+					army_reformer = 1
+					commandant = 1
+					quartermaster = 1
+				}
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			change_government_reform_progress = 50
+			add_legitimacy = 10
 		}
 	}
 	##Mission End
@@ -100,27 +125,39 @@ noble_mission_invasion = {
 		}
 		position = 2
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			province_id = 330
 		}
 		trigger = {
-			if = {
-				limit = {
-					has_estate = estate_nobles
-				}
-				AND = {
-					estate_loyalty = {
-						estate = estate_nobles
-						loyalty = 60
-					}
-					estate_influence = {
-						estate = estate_nobles
-						influence = 60
-					}
-				}
+			330 = {
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_country_modifier = {
+				name="war_path_geo"
+				duration = 10
+			}
+			armenia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			samstkhe_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			shirvan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	##Mission End
@@ -132,13 +169,20 @@ noble_mission_invasion = {
 		}
 		position = 3
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+				area = armenia_area
+			
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			armenia_area = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_country_modifier ={
+				name = "geo_conquest_of_armenia"
+				duration = 20
+			}
 		}
 	}
 	##Mission End
@@ -150,13 +194,23 @@ noble_mission_invasion = {
 		}
 		position = 4
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+				area = armenia_area
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			armenia_area = {
+				AND={
+					type = all
+					owned_by = ROOT
+					religion = ROOT
+					is_core = ROOT
+				}
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			armenia_area= {
+				add_base_manpower = 1
+				add_base_production = 2
+			}
 		}
 	}
 	##Mission End
@@ -168,13 +222,35 @@ noble_mission_invasion = {
 		}
 		position = 5
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			stability = 3
+			prestige = 50
+			treasury = 500
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_treasury = -500
+			define_advisor = {
+				type = army_reformer
+				skill = 3
+				cost_multiplier = 0.25
+				culture = armenian
+				religion = ROOT
+			}
+			define_advisor = {
+				type = diplomat
+				skill = 3
+				cost_multiplier = 0.25
+				culture = armenian
+				religion = ROOT
+			}
+			define_advisor = {
+				type = philosopher
+				skill = 3
+				cost_multiplier = 0.25
+				culture = armenian
+				religion = ROOT
+			}
 		}
 	}
 	##Mission End
@@ -186,13 +262,20 @@ noble_mission_invasion = {
 		}
 		position = 6
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			area = armenia_area
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			armenia_area = {
+				development = 30
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			armenia_area = {
+				add_province_modifier = {
+					name = "geo_armenian_trade"
+					duration = -1
+				}
+			}
 		}
 	}
 	##Mission End
@@ -222,10 +305,15 @@ noble_mission_money = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			treasury = 250
+			
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_treasury = -250
+			add_country_modifier = {
+				name = "thriving_geo_economy"
+				duration = 20
+			}
 		}
 	}
 	##Mission End
@@ -237,13 +325,20 @@ noble_mission_money = {
 		}
 		position = 4
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+				region = persia_region
+			
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			persia_region = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_country_modifier = {
+				name = "geo_conquest_of_persia"
+				duration = -1
+			}
 		}
 	}
 	##Mission End
@@ -273,10 +368,48 @@ noble_mission_eco = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			4301 = {
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT
+					development = 12
+				}
+			}
+			423 = {
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT
+					development = 12
+				}
+			}
+			2203 = {
+				AND = {
+				country_or_non_sovereign_subject_holds = ROOT
+				development = 12
+				}
+			}
+			422 = {
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT
+					development = 10
+				}
+			}
+			462 = {
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT
+					development = 10
+				}
+			}
+			2204 = {
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT
+					development = 10
+				}
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_country_modifier = {
+				name="geo_kickstarting_eco"
+				duration = 25
+			}
 		}
 	}
 	##Mission End
@@ -288,13 +421,22 @@ noble_mission_eco = {
 		}
 		position = 4
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			area = shirvan_area
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			shirvan_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			average_unrest= 0
+			overextension_percentage = 0
+			religious_unity = 1
+			
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_country_modifier = {
+				name = "geo_fight_for_god"
+				duration = -1
+			}
 		}
 	}
 	##Mission End
@@ -309,10 +451,20 @@ noble_mission_eco = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			423 = {
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT
+					development = 40
+				}
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			423 = {
+				add_province_modifier = {
+					name = "geo_shining_mountain"
+					duration = -1
+				}
+			}
 		}
 	}
 	##Mission End
@@ -327,15 +479,17 @@ noble_mission_eco = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			development = 1000
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_country_modifier = {
+				name = "touched_by_god_geo"
+				duration = -1
+			}
 		}
 	}
 	##Mission End
 	##
-	
 }
 ##BranchEnd 3
 ##BranchStart 4
@@ -360,10 +514,16 @@ noble_mission_church = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			religious_unity = 0.90
 		}
 		effect = {
-			##MISSIONEFFECT
+			define_advisor = {
+				type = inquisitor
+				skill = 1
+				cost_multiplier = 0.75
+				culture = ROOT
+				religion = ROOT
+			}
 		}
 	}
 	##Mission End
@@ -374,14 +534,14 @@ noble_mission_church = {
 			GEO_mountain_infrastructure, GEO_choose_religion
 		}
 		position = 2
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
 		trigger = {
-			##MISSIONTRIGGER
+			temple = 5
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_country_modifier = {
+				name = "converting_geo"
+				duration = -1
+			}
 		}
 	}
 	##Mission End
@@ -396,10 +556,12 @@ noble_mission_church = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			421 = {
+				owned_by = ROOT
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_treasury = 500
 		}
 	}
 	##Mission End
@@ -414,10 +576,24 @@ noble_mission_church = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			shirvan_area = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			limit = {
+					NOT = { accepted_culture = azerbaijani }
+					NOT = { primary_culture = azerbaijani }
+				}
+			add_accepted_culture = azerbaijani
+			persia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	##Mission End

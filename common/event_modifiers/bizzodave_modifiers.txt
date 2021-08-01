@@ -1,0 +1,63 @@
+loyal_nobility = {
+	global_regiment_cost = -0.10
+	manpower_recovery_speed = 0.30
+}
+thriving_geo_economy = {
+	development_cost = -0.10
+	build_cost = -0.1
+	build_time = -0.25
+	state_maintence_modifier = -0.20
+	global_tax_modifier = 0.10
+	production_efficiency = 0.10
+}
+war_path_geo = {
+	land_morale = 0.10
+	movement_speed = 0.10
+	army_tradition_from_battle = 2.0
+}
+geo_conquest_of_persia = {
+	monarch_military_power = 1
+	prestige = 1.0
+	advisor_cost = -0.1
+	global_unrest = -1.0
+	discipline = 0.025
+}
+geo_kickstarting_eco = {
+	interest = -1.0
+	inflation_action_cost = -0.50
+	core_creation = -0.20
+}
+geo_conquest_of_armenia = {
+	global_unrest = -2.0
+	prestige = 1.0
+}
+geo_armenian_trade = {
+	picture = "province_trade_power_value"
+	trade_value_modifier = 0.1
+	trade_goods_size_modifier = 0.25
+	province_trade_power_value = 10
+}
+geo_fight_for_god = {
+	global_manpower_modifier = 0.1
+}
+developing_geo = {
+	development_cost = -0.20
+}
+converting_geo = {
+	global_missionary_strength = 0.01
+	tolerance_own = 1.0
+}
+geo_shining_mountain = {
+	trade_value_modifier = 0.3
+	trade_goods_size_modifier = 0.4
+	province_trade_power_value = 25
+}
+touched_by_god_geo = {
+	religious_unity = 0.20
+	missionaries = 2
+	tolerance_heretic = -2
+	tolerance_heathen = -2
+	land_morale	= 0.075
+	monarch_admin_power	= 1
+	monarch_lifespan = 0.1
+}
