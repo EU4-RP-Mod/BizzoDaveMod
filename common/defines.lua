@@ -336,7 +336,7 @@ NDiplomacy = {
 	INTEGRATE_UNION_MIN_YEARS = 50,					-- Number of years before a union can be integrated
 	INTEGRATE_VASSAL_MIN_YEARS = 10,				-- Number of years before a vassal can be integrated
 
-	MONTHS_BEFORE_TOTAL_OCCUPATION = 60,			-- Before this many months have passed in the war, you cannot gain 100% warscore by just occupying the warleader
+	MONTHS_BEFORE_TOTAL_OCCUPATION = 0,			-- Before this many months have passed in the war, you cannot gain 100% warscore by just occupying the warleader
 
 	WAR_REPARATIONS_FACTOR = 0.1,
 	WAR_REPARATIONS_YEARS = 10,
@@ -491,7 +491,7 @@ NCountry = {
 
 
 	DISINHERIT_PRESTIGE_HIT = -25,
-	DISINHERIT_PRESTIGE_THRESHOLD = 0,
+	DISINHERIT_PRESTIGE_THRESHOLD = -75,
 	
 	NEW_HEIR_PRESTIGE_HIT = -20,
 	NEW_HEIR_PRESTIGE_THRESHOLD = 0,

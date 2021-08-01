@@ -30,5 +30,5 @@ EMS_reform_of_administration = {
 }
 
 EMS_gold_rush = {
-	trade_goods_size = 1
+	trade_goods_size = 0.5
 }

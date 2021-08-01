@@ -73,6 +73,10 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
+			add_country_modifier = {
+				name = "aragonese_italians"
+				duration = -1
+		    }
 			set_country_flag = formed_spain_flag
 			add_prestige = 25
 			add_accepted_culture = neapolitan

@@ -2066,7 +2066,7 @@ tun_restoration_of_alexandra = {
 # Aragonese Missions
 
 llotja_de_la_seda = {
-	trade_goods_size_modifier = 0.25
+	trade_goods_size = 1
 }
 
 industria_sedera = {
@@ -2078,7 +2078,11 @@ ara_golden_age = {
 }
 
 barcelona_guilds = {
-	local_production_efficiency = 0.25
+	trade_goods_size = 1
+}
+
+aragonese_tunisians = {
+	num_accepted_cultures = 1
 }
 
 taula_de_canvi = {

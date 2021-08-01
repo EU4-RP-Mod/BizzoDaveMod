@@ -1123,6 +1123,10 @@ gc_aragon_5 = {
 				add_permanent_claim = ROOT
 			}
 			add_accepted_culture = tunisian
+			add_country_modifier = {
+				name = "aragonese_tunisians"
+				duration = -1
+		    }
 		}
 	}
 	gc_ara_tunis = {

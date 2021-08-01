@@ -6,6 +6,7 @@ religion = sunni
 technology_group = ottoman
 capital = 328	# Sinop
 religious_school = hanafi_school
+historical_rival = MAM
 
 1385.1.1 = {
 	monarch = {

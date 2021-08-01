@@ -7,6 +7,8 @@ religion = shiite
 technology_group = muslim
 capital = 416 # Tabriz
 religious_school = ismaili_school
+historical_friend = AKK
+historical_friend = BTL
 
 1390.1.1 = {
 	monarch = {

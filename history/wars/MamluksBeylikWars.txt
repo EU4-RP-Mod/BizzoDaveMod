@@ -1,26 +1,19 @@
-name = "Crusade of Varna"
+name = "Memeluk war"
 war_goal = {
 	type = superiority_crusade
 	casus_belli = cb_crusade
 }
 
 1443.1.1 = {
-	add_attacker = HUN
-	add_attacker = SER
-	add_attacker = POL
-	add_attacker = LIT
-	add_attacker = BOS
-	add_attacker = WAL
-	add_attacker = MOL
-	add_attacker = VEN
-	add_attacker = PAP
 	add_attacker = MAM
-	add_defender = TUR
+	add_defender = RAM
+	add_defender = KAR
+	add_defender = DUL
 }
 
 1444.11.10 = {
 	battle = {
-		name = "Varna"
+		name = "Meme"
 		location = 150
 		attacker = {
 			commander = "Wladyslaw III"	# Wladyslaw III
@@ -41,14 +34,8 @@ war_goal = {
 }
 
 1444.11.11 = {
-	rem_attacker = HUN
-	rem_attacker = SER
-	rem_attacker = POL
-	rem_attacker = LIT
-	rem_attacker = BOS
-	rem_attacker = WAL
-	rem_attacker = VEN
-	rem_attacker = PAP
 	rem_attacker = MAM
-	rem_defender = TUR
+	rem_defender = RAM
+	rem_defender = KAR
+	rem_defender = DUL
 }

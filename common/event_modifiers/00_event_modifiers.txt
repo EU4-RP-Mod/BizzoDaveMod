@@ -1655,6 +1655,10 @@ centralization_modifier = {
 	global_unrest = 1
 }
 
+aragonese_italians = {
+	num_accepted_cultures = 8
+}
+
 decentralization_modifier = {
 	global_autonomy = 0.05
 	global_unrest = -1

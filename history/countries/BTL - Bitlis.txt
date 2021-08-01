@@ -6,6 +6,7 @@ religion = sunni
 technology_group = muslim
 capital = 4296 # Bitlis
 religious_school = shafii_school
+historical_friend = QAR
 
 1440.1.1 = {
 	monarch = {

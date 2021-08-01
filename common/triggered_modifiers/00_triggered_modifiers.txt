@@ -352,7 +352,7 @@ papal_subjugation = {
 		NOT = { tag = ITA }
 	}
 
-	diplomatic_reputation = -2
+	diplomatic_reputation = -1
 	#icon = 9
 }
 
